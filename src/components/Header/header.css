@@ -1,9 +1,86 @@
-.logoHeader {
-    width: 150px;
-  }
-  
-  @media screen and (max-width: 480px) {
-    .botao-voltar {
-      display: none;
-    }
-  }
+.Header{
+  display: flex;
+  align-items: center;
+  /*justify-content: space-around;*/
+  height: 85px;
+  width: 100%;
+  border-bottom: 1.7px solid rgba(255, 255, 255, 0.062);
+  background: linear-gradient(91deg, rgba(217, 217, 217, 0.18) -5.03%, rgba(217, 217, 217, 0.00) -5.02%, rgba(217, 217, 217, 0.04) 27.86%, rgba(217, 217, 217, 0.03) 46.25%, rgba(217, 217, 217, 0.06) 89.31%, rgba(217, 217, 217, 0.00) 102%);
+  backdrop-filter: blur(5px);
+}
+
+.header.botoes{
+  background-color: aliceblue;
+  display: flex;
+  align-items: center;
+}
+
+.header .esquerda{
+  width: 25%;
+  display: flex;
+  align-items: center;
+  margin-left: 2rem;
+}
+
+.header .direita{
+  width: 25%;
+  display: flex;
+  justify-content:flex-end;
+  margin-right: 2rem;
+  align-items: center;
+}
+
+.header .meio{
+  width: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.header .meio .botoes{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+}
+
+.header .meio .botoes button{
+  background-color: #ffffff05;
+  border: 1px solid;
+  border-color: #3d3d3d;
+  border-radius: 9.64px;
+  height: 38px;
+  overflow: hidden;
+  position: relative;
+  width: 101px;
+  color: #ffffff;
+  font-family: "Poppins";
+  font-weight: 400;
+  cursor: pointer;
+  transition: width 0.2s;
+}
+
+.header .meio .botoes button:hover{
+  background: linear-gradient(90deg, rgb(0, 86.7, 255) 0%, rgb(188.7, 0, 255) 100%);
+  border: none;
+  width: 110px;
+}
+
+.header .direita button{
+  background: linear-gradient(90deg, rgb(0, 86.7, 255) 0%, rgb(188.7, 0, 255) 100%);
+  background-color: rgba(255, 255, 255, 1);
+  border-radius: 10.54px;
+  border: none;
+  height: 42px;
+  width: 142px;
+  color: #ffffff;
+  font-family: "Poppins";
+  font-weight: 400;
+  cursor: pointer;
+  transition: height, 0.1s;
+}
+
+.header .direita button:hover{
+  height: 55px;
+}

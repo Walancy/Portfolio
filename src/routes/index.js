@@ -1,1 +1,1 @@
-export const PAGINA_INICIAL = "/inicio";
+export const PAGINA_INICIAL = "/";
