@@ -1,0 +1,46 @@
+.itens{
+    font-family: "Poppins";
+    color: #ffffff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    gap: 1rem;
+
+    backdrop-filter: blur(10px) brightness(100%);
+    background-color: #0000002b;
+    border: 1.11px solid;
+    border-color: transparent;
+    border-radius: 16px;
+    border-color: #ffffff41;
+}
+
+.itens .botoes{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 1rem;
+    gap: 1rem;
+}
+
+.itens button{
+    background-color: #0000002b;
+    border-radius: 10.54px;
+    border: 1px solid;
+    border-color: #ffffff41;
+    height: 42px;
+    width: 162px;
+    color: #ffffff;
+    font-family: "Poppins";
+    font-weight: 400;
+    cursor: pointer;
+    transition: height, 0.1s;
+}
+
+.itens button:hover{
+    background: linear-gradient(90deg, rgb(0, 86.7, 255) 0%, rgb(188.7, 0, 255) 100%);
+    border: none;
+    height: 47px;
+}
