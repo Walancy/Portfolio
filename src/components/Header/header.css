@@ -1,30 +1,30 @@
-.headerSpace{
-  
+.headerSpace {
+
   height: 25rem;
 }
 
-.Header{
+.Header {
   display: flex;
   align-items: center;
   /*justify-content: space-around;*/
   height: 85px;
   width: 100%;
-  
 
-  /* border-bottom: 1.7px solid rgba(255, 255, 255, 0.062); */
+
+  border-bottom: 1.7px solid rgba(255, 255, 255, 0.062);
   background: linear-gradient(91deg, rgba(217, 217, 217, 0.18) -5.03%, rgba(217, 217, 217, 0.00) -5.02%, rgba(217, 217, 217, 0.04) 27.86%, rgba(217, 217, 217, 0.03) 46.25%, rgba(217, 217, 217, 0.06) 89.31%, rgba(217, 217, 217, 0.00) 102%);
   backdrop-filter: blur(5px);
   position: fixed;
 }
 
-.header.botoes{
+.header.botoes {
   background-color: aliceblue;
   display: flex;
   align-items: center;
 }
 
-.header .esquerda{
-  
+.header .esquerda {
+
 
   width: 25%;
   display: flex;
@@ -32,18 +32,18 @@
   margin-left: 2rem;
 }
 
-.header .direita{
-  
+.header .direita {
+
 
   width: 25%;
   display: flex;
-  justify-content:flex-end;
+  justify-content: flex-end;
   margin-right: 2rem;
   align-items: center;
 }
 
-.header .meio{
-  
+.header .meio {
+
 
   width: 50%;
   display: flex;
@@ -53,9 +53,7 @@
   position: relative;
 }
 
-.header .meio .botoes{
-  
-
+.header .meio .botoes {
   display: flex;
   flex-direction: row;
   align-items: center;
@@ -63,32 +61,64 @@
   gap: 1rem;
 }
 
-.contato-menu .instagram{
+.contato-menu .instagram {
   margin-top: 0.5rem;
 }
 
-.contato-menu{
+.portfolio-menu {
   font-family: poppins;
   position: absolute;
-  display: block;
+  display: none;
   border-top: 2.4rem;
   backdrop-filter: blur(10px) brightness(100%);
-  background-color: #0000002b;
+  background-color: #0000003a;
   border: 1.11px solid;
-  border-color: transparent;
-  border-radius: 16px;
-  border-color: #ffffff41;
-  display: flex;
-  align-items: flex-end;
+  border-radius: 10px;
+  border-color: #ffffff42;
 
+  margin-top: 2.4rem;
   padding: 10px;
   width: 6.2rem;
-  height: 10rem;
+  transition: width, 0.2s;
 }
 
-.contato-menu a{
+.contato-menu {
+  font-family: poppins;
+  position: absolute;
+  display: none;
+  border-top: 2.4rem;
+  backdrop-filter: blur(10px) brightness(100%);
+  background-color: #0000003a;
+  border: 1.11px solid;
+  border-radius: 10px;
+  border-color: #ffffff42;
+
+
+  margin-top: 2.4rem;
+  padding: 10px;
+  width: 6.2rem;
+  transition: width, 0.2s;
+}
+
+.portfolio-menu a {
   text-decoration: none;
-  
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 42px;
+  width: 100%;
+  justify-content: center;
+
+  color: #ffffff;
+  font-family: "Poppins";
+  font-size: 14px;
+}
+
+.contato-menu a {
+  text-decoration: none;
+
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -103,18 +133,35 @@
 
 }
 
-.contatoDropdown{
+.contatoDropdown {
   display: flex;
   justify-content: center;
   gap: 500px;
 }
 
-.contatoDropdown:hover .contato-menu{
+.portfolioDropdown {
+  display: flex;
+  justify-content: center;
+  gap: 500px;
+}
+
+.portfolio-menu:hover {
+  width: 7rem;
+}
+
+.contato-menu:hover {
+  width: 7rem;
+}
+
+.contatoDropdown:hover .contato-menu {
   display: block;
 }
 
+.portfolioDropdown:hover .portfolio-menu {
+  display: block;
+}
 
-.header .meio .botoes button{
+.header .meio .botoes button {
   background-color: #ffffff05;
   border: 1px solid;
   border-color: #3d3d3d;
@@ -130,13 +177,13 @@
   transition: width 0.2s;
 }
 
-.header .meio .botoes button:hover{
+.header .meio .botoes button:hover {
   background: linear-gradient(90deg, rgb(0, 86.7, 255) 0%, rgb(188.7, 0, 255) 100%);
   border: none;
   width: 110px;
 }
 
-.header .direita button{
+.header .direita button {
   background: linear-gradient(90deg, rgb(0, 86.7, 255) 0%, rgb(188.7, 0, 255) 100%);
   background-color: rgba(255, 255, 255, 1);
   border-radius: 10.54px;
@@ -150,16 +197,16 @@
   transition: height, 0.1s;
 }
 
-.header .direita button:hover{
+.header .direita button:hover {
   height: 55px;
 }
 
-.contato{
+.contato {
   display: flex;
 
 }
 
-.modalContatos .itens{
+.modalContatos .itens {
   display: flex;
   flex-direction: column;
 }
@@ -178,6 +225,3 @@
 
 .modalPortfolio{
   display: flex; /* Inicialmente, o modal estará oculto */
-
-  
-
