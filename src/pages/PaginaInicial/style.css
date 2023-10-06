@@ -3,3 +3,277 @@ body {
   margin: 0px;
 }
 
+::selection {
+  background-color: rgb(106, 0, 255);
+  color: #ffffff;
+}
+
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-thumb {
+  border-radius: 20px;
+  background: linear-gradient(180deg, #BD00FF 0%, #0057FF 100%);
+}
+
+::-webkit-scrollbar-track {
+  background-color: #252525;
+}
+
+.inicio {
+  height: 44vw;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-content: center;
+  background: radial-gradient(50% 50% at 50% 50%, rgba(64, 0, 87, 0.42) 0%, rgba(19, 19, 21, 0.00) 100%);
+}
+
+.inicio-box {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.frase {
+  width: 350px;
+  color: #fff;
+  text-align: center;
+  font-family: Clash Display;
+  font-size: 30px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 90%;
+}
+
+.gradiente-frase {
+  background: linear-gradient(271deg, #BD00FF 23.52%, #0057FF 143.29%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-family: Clash Display;
+  font-style: normal;
+  font-weight: 600;
+}
+
+.separador {
+  width: 178px;
+  height: 1px;
+  background-color: #ffffff;
+  border: none;
+  border-radius: 20px;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+  transition: width 0.3s, margin-top 0.3s;
+}
+
+.frase:hover .separador {
+  margin-top: 0.5rem;
+  width: 330px;
+}
+
+
+.mensagem {
+  color: #5A5A5A;
+  text-align: center;
+  font-family: Clash Display;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 107.3%;
+  width: 500px;
+
+  flex-shrink: 0;
+}
+
+.contato .botao {
+  margin-top: 2rem;
+  color: #fff;
+  font-family: Clash Display;
+  font-size: 17px;
+  letter-spacing: 0.3px;
+  font-weight: 500;
+  cursor: pointer;
+  display: inline-flex;
+  padding: 19px 35px;
+  justify-content: center;
+  align-items: center;
+  border: none;
+  border-radius: 18.428px;
+  box-shadow: none;
+  background: linear-gradient(96deg, #0057FF -29.23%, #BD00FF 90.4%);
+  transition: box-shadow 0.2s, padding 0.2s;
+}
+
+.contato .botao:hover {
+  box-shadow: 0px 0px 10px 7px rgba(100, 41, 255, 0.24);
+  padding: 23px 45px;
+
+}
+
+.softwares {
+  margin-top: 7rem;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.softwaresUso {
+  color: #5A5A5A;
+  text-align: center;
+  font-family: Clash Display;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 107.3%;
+  margin-top: -4rem;
+  /* 17.541px */
+}
+
+.icones {
+  position: absolute;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+}
+
+.icones img {
+  display: flex;
+  width: 25px;
+  transition: width 0.15s;
+}
+
+.icones img:hover {
+  width: 35px;
+}
+
+/*---------------------------------container "sobre mim"-------------------------------*/
+
+.sobre-mim {
+  height: 40rem;
+  display: flex;
+  flex-direction: row;
+  background: radial-gradient(59.41% 52.44% at 46.04% 47.71%, rgba(189, 0, 255, 0.13) 0%, rgba(189, 0, 255, 0.00) 100%), linear-gradient(91deg, rgba(217, 217, 217, 0.25) -5.03%, rgba(217, 217, 217, 0.00) -5.02%, rgba(217, 217, 217, 0.05) 27.86%, rgba(217, 217, 217, 0.04) 46.25%, rgba(217, 217, 217, 0.09) 89.31%, rgba(217, 217, 217, 0.00) 102%);
+
+}
+
+.sobre-esquerda {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  width: 48%;
+  gap: 2rem;
+  margin-left: 1rem;
+}
+
+.sobre-esquerda .foto {
+
+  display: flex;
+  align-items: center;
+}
+
+.foto img {
+  width: 23vw;
+  transition: width 0.5s;
+}
+
+.foto img:hover {
+  width: 25vw;
+}
+
+.sobre-esquerda .info {
+
+  font-family: Clash display;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 40%;
+  line-height: 90%;
+  font-size: 20px;
+  font-weight: 300;
+  gap: 3.5rem;
+}
+
+.sobre-esquerda .info .design {
+  color: #fff;
+}
+
+.design .quatroAnos {
+  background: linear-gradient(271deg, #BD00FF 23.52%, #0057FF 143.29%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-family: Clash Display;
+  font-style: normal;
+  font-size: 40px;
+  font-weight: 600;
+}
+
+.sobre-esquerda .info .programacao {
+
+  color: #fff;
+}
+
+.programacao .doisAnos {
+  background: linear-gradient(271deg, #BD00FF 23.52%, #0057FF 143.29%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-family: Clash Display;
+  font-style: normal;
+  font-size: 40px;
+
+  font-weight: 600;
+}
+
+.sobre-divisao {
+  display: flex;
+  align-items: center;
+  width: 4%;
+}
+
+.sobre-direita {
+  width: 48%;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  color: #fff;
+  font-family: clash display;
+}
+
+.sobre-direita .texto {
+  padding-bottom: 5rem;
+  margin: 10%;
+  display: flex;
+  flex-direction: column;
+  font-weight: 200;
+  transition: font-weight 0.2s;
+}
+
+.ola {
+  background: linear-gradient(271deg, #BD00FF 23.52%, #0057FF 143.29%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-family: Clash Display;
+  font-style: normal;
+  font-size: 40px;
+  font-weight: 600;
+}
+
+.texto:hover {
+  font-weight: 500;
+}
+
+.sobre-div {
+  background: linear-gradient(180deg, #400057 0%, #0057FF 100%);
+  width: 4px;
+  height: 80%;
+  border-radius: 15px;
+  border: none;
+  transition: height 0.2s;
+}

@@ -1,13 +1,11 @@
 .headerSpace {
-
-  height: 25rem;
+  height: 4rem;
 }
 
 .Header {
   display: flex;
   align-items: center;
-  /*justify-content: space-around;*/
-  height: 85px;
+  height: 4rem;
   width: 100%;
 
 
@@ -18,14 +16,11 @@
 }
 
 .header.botoes {
-  background-color: aliceblue;
   display: flex;
   align-items: center;
 }
 
 .header .esquerda {
-
-
   width: 25%;
   display: flex;
   align-items: center;
@@ -33,8 +28,6 @@
 }
 
 .header .direita {
-
-
   width: 25%;
   display: flex;
   justify-content: flex-end;
@@ -43,8 +36,6 @@
 }
 
 .header .meio {
-
-
   width: 50%;
   display: flex;
   flex-direction: column;
@@ -61,82 +52,50 @@
   gap: 1rem;
 }
 
-.contato-menu .instagram {
-  margin-top: 0.5rem;
-}
-
 .portfolio-menu {
   font-family: poppins;
   position: absolute;
   display: none;
   border-top: 2.4rem;
-  backdrop-filter: blur(10px) brightness(100%);
-  background-color: #0000003a;
-  border: 1.11px solid;
-  border-radius: 10px;
-  border-color: #ffffff42;
-
-  margin-top: 2.4rem;
   padding: 10px;
-  width: 6.2rem;
+
+  border-radius: 16.699px;
+  border: 1.113px solid rgba(255, 255, 255, 0.33);
+  background-color: #0000003a;
+  border-radius: 10px;
+  border-color: #ffffff17;
+  margin-top: 2.3rem;
   transition: width, 0.2s;
 }
 
-.contato-menu {
-  font-family: poppins;
-  position: absolute;
-  display: none;
-  border-top: 2.4rem;
-  backdrop-filter: blur(10px) brightness(100%);
-  background-color: #0000003a;
-  border: 1.11px solid;
-  border-radius: 10px;
-  border-color: #ffffff42;
-
-
-  margin-top: 2.4rem;
-  padding: 10px;
-  width: 6.2rem;
-  transition: width, 0.2s;
+.portfolio-botoes {
+  gap: 10px;
 }
 
 .portfolio-menu a {
   text-decoration: none;
-
+  text-wrap: nowrap;
+  font-size: 13px;
+  background-color: #7474740b;
+  border: 1px solid rgba(255, 255, 255, 0.132);
+  border-radius: 10px;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  height: 42px;
-  width: 100%;
   justify-content: center;
+  padding: 8px 15px;
+
 
   color: #ffffff;
   font-family: "Poppins";
-  font-size: 14px;
+  transition: padding 0.3s, background 0.2s;
 }
 
-.contato-menu a {
-  text-decoration: none;
-
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  height: 42px;
-  width: 100%;
-  justify-content: center;
-
-  color: #ffffff;
-  font-family: "Poppins";
-  font-size: 14px;
-
-}
-
-.contatoDropdown {
-  display: flex;
-  justify-content: center;
-  gap: 500px;
+.portfolio-menu a:hover {
+  border: none;
+  padding: 14px 15px;
+  background: linear-gradient(90deg, rgb(0, 86.7, 255) 0%, rgb(188.7, 0, 255) 100%);
 }
 
 .portfolioDropdown {
@@ -145,42 +104,82 @@
   gap: 500px;
 }
 
-.portfolio-menu:hover {
-  width: 7rem;
-}
-
-.contato-menu:hover {
-  width: 7rem;
-}
-
-.contatoDropdown:hover .contato-menu {
+.portfolioDropdown:hover .portfolio-menu {
   display: block;
 }
 
-.portfolioDropdown:hover .portfolio-menu {
+.contato-menu {
+  font-family: poppins;
+  position: absolute;
+  display: none;
+  border-top: 2.4rem;
+  border-radius: 16.699px;
+  border: 1.113px solid rgba(255, 255, 255, 0.33);
+  background-color: #0000003a;
+  border-radius: 10px;
+  border-color: #ffffff17;
+  margin-top: 2.3rem;
+  transition: width, 0.2s;
+}
+
+.contato-menu a {
+  text-decoration: none;
+  text-wrap: nowrap;
+  padding: 10px 12px;
+  margin: 10px;
+  font-size: 13px;
+  background-color: #7474740b;
+  border: 1px solid rgba(255, 255, 255, 0.132);
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  justify-content: center;
+
+
+  color: #ffffff;
+  font-family: "Poppins";
+  transition: padding 0.3s, background 0.2s;
+}
+
+.contato-menu a:hover {
+  background: linear-gradient(90deg, rgb(0, 86.7, 255) 0%, rgb(188.7, 0, 255) 100%);
+  border: none;
+  padding: 15px 10px;
+}
+
+.contatoDropdown {
+  display: flex;
+  justify-content: center;
+  gap: 500px;
+}
+
+
+.contatoDropdown:hover .contato-menu {
   display: block;
 }
 
 .header .meio .botoes button {
   background-color: #ffffff05;
   border: 1px solid;
+  padding: 8px 15px;
   border-color: #3d3d3d;
   border-radius: 9.64px;
-  height: 38px;
   overflow: hidden;
   position: relative;
-  width: 101px;
   color: #ffffff;
   font-family: "Poppins";
   font-weight: 400;
   cursor: pointer;
-  transition: width 0.2s;
+  transition: padding 0.2s;
 }
 
 .header .meio .botoes button:hover {
   background: linear-gradient(90deg, rgb(0, 86.7, 255) 0%, rgb(188.7, 0, 255) 100%);
   border: none;
-  width: 110px;
+  padding: 8px 20px;
+
 }
 
 .header .direita button {
@@ -188,40 +187,14 @@
   background-color: rgba(255, 255, 255, 1);
   border-radius: 10.54px;
   border: none;
-  height: 42px;
-  width: 142px;
+  padding: 10px 25px;
   color: #ffffff;
   font-family: "Poppins";
   font-weight: 400;
   cursor: pointer;
-  transition: height, 0.1s;
+  transition: padding, 0.2s;
 }
 
 .header .direita button:hover {
-  height: 55px;
+  padding: 15px 30px;
 }
-
-.contato {
-  display: flex;
-
-}
-
-.modalContatos .itens {
-  display: flex;
-  flex-direction: column;
-}
-
-/*
-.modalContatos{
-  display: flex;
-
-  margin-top: 10rem;
-}
-.headerModal{
-  display: flex;
-  flex-direction: row;
-}
-
-
-.modalPortfolio{
-  display: flex; /* Inicialmente, o modal estará oculto */

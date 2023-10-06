@@ -14,7 +14,7 @@ export const Header = () => {
         <div className="meio">
           <div className="botoes">
             <div className="sobre">
-              <button>Sobre</button>
+              <button>Sobre mim</button>
             </div>
             <div className="portfolioDropdown">
               <button>Portfólio</button>
@@ -26,7 +26,7 @@ export const Header = () => {
                     rel="noopener noreferrer"
                     className="github"
                   >
-                    <button>GitHub</button>
+                    <div>GitHub</div>
                   </a>
                   <a
                     href="https://www.behance.net/walancy_dsgn"
@@ -34,7 +34,7 @@ export const Header = () => {
                     rel="noopener noreferrer"
                     className="uxui"
                   >
-                    <button>UX/UI</button>
+                    <div>UX/UI</div>
                   </a>
                   <a
                     href="https://www.behance.net/walancy_dsgn"
@@ -42,7 +42,7 @@ export const Header = () => {
                     rel="noopener noreferrer"
                     className="socialmedia"
                   >
-                    <button>Social Media</button>
+                    <div>Social Media</div>
                   </a>
                   <a
                     href="https://www.behance.net/walancy_dsgn"
@@ -50,7 +50,7 @@ export const Header = () => {
                     rel="noopener noreferrer"
                     className="logodesign"
                   >
-                    <button>Logo Design</button>
+                    <div>Logo Design</div>
                   </a>
                 </div>
               </div>
@@ -68,6 +68,7 @@ export const Header = () => {
             <div className="contatoDropdown">
               <button>Contato</button>
               <div className="contato-menu">
+
                 <div className="contato-botoes">
                   <a
                     href="https://api.whatsapp.com/send/?phone=5544998043997"
@@ -75,7 +76,7 @@ export const Header = () => {
                     rel="noopener noreferrer"
                     className="whatsapp"
                   >
-                    <button>WhatsApp</button>
+                    <div>WhatsApp</div>
                   </a>
                   <a
                     href="https://www.instagram.com/sant.dsg/"
@@ -83,7 +84,7 @@ export const Header = () => {
                     rel="noopener noreferrer"
                     className="instagram"
                   >
-                    <button>Instagram</button>
+                    <div>Instagram</div>
                   </a>
                 </div>
               </div>
