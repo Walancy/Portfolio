@@ -1,23 +1,54 @@
-import React from "react";
+import React, { useEffect } from 'react';
 import "./header.css";
 import LogoHeader from "../../assets/logo.svg";
 
 export const Header = () => {
+  useEffect(() => {
+    document.getElementById('botaoSobreMim').addEventListener('click', function () {
+      document.getElementById('sobreMim').scrollIntoView({ behavior: 'smooth' });
+    });
+
+    return () => {
+      document.getElementById('botaoSobreMim').removeEventListener('click', function () {
+        document.getElementById('sobreMim').scrollIntoView({ behavior: 'smooth' });
+      });
+    }
+  }, []);
+
+  useEffect(() => {
+    document.getElementById('logoInicio').addEventListener('click', function () {
+      document.getElementById('inicioHeader').scrollIntoView({ behavior: 'smooth' });
+    });
+
+    return () => {
+      document.getElementById('logoInicio').removeEventListener('click', function () {
+        document.getElementById('inicioHeader').scrollIntoView({ behavior: 'smooth' });
+      });
+    }
+  }, []);
+
   return (
     <div className="headerSpace">
       <div className="Header">
         <div className="esquerda">
-          <div className="logo">
+          <div id="logoInicio" className="logo">
             <img src={LogoHeader} alt="logo" style={{ width: 150 }} />
           </div>
         </div>
         <div className="meio">
           <div className="botoes">
             <div className="sobre">
-              <button>Sobre mim</button>
+              <button id="botaoSobreMim" className="botao-sobre">Sobre mim</button>
             </div>
+            <div className="sobre">
+              <button id="botaoSobreMim" className="botao-sobre">Projetos</button>
+            </div>
+            <div className="sobre">
+              <button id="botaoSobreMim" className="botao-sobre">Tecnologias</button>
+            </div>
+
             <div className="portfolioDropdown">
-              <button>Portfólio</button>
+              <button>Portfólios</button>
               <div className="portfolio-menu">
                 <div className="portfolio-botoes">
                   <a
@@ -34,7 +65,7 @@ export const Header = () => {
                     rel="noopener noreferrer"
                     className="uxui"
                   >
-                    <div>UX/UI</div>
+                    <div>Behance</div>
                   </a>
                   <a
                     href="https://www.behance.net/walancy_dsgn"
@@ -42,31 +73,13 @@ export const Header = () => {
                     rel="noopener noreferrer"
                     className="socialmedia"
                   >
-                    <div>Social Media</div>
-                  </a>
-                  <a
-                    href="https://www.behance.net/walancy_dsgn"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="logodesign"
-                  >
-                    <div>Logo Design</div>
+                    <div>Linkedin</div>
                   </a>
                 </div>
               </div>
             </div>
-            <div className="behance">
-              <a
-                href="https://www.behance.net/walancy_dsgn"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="behance"
-              >
-                <button>Behance</button>
-              </a>
-            </div>
             <div className="contatoDropdown">
-              <button>Contato</button>
+              <button>Contatos</button>
               <div className="contato-menu">
 
                 <div className="contato-botoes">
@@ -85,6 +98,12 @@ export const Header = () => {
                     className="instagram"
                   >
                     <div>Instagram</div>
+                  </a>
+                  <a
+                    href="mailto:walancyhfsantos@outlook.com"
+                    className="email"
+                  >
+                    <div>Email</div>
                   </a>
                 </div>
               </div>

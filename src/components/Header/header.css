@@ -10,9 +10,13 @@
 
 
   border-bottom: 1.7px solid rgba(255, 255, 255, 0.062);
-  background: linear-gradient(91deg, rgba(217, 217, 217, 0.18) -5.03%, rgba(217, 217, 217, 0.00) -5.02%, rgba(217, 217, 217, 0.04) 27.86%, rgba(217, 217, 217, 0.03) 46.25%, rgba(217, 217, 217, 0.06) 89.31%, rgba(217, 217, 217, 0.00) 102%);
+  background: linear-gradient(91deg, rgba(217, 217, 217, 0.015) -5.03%, rgba(217, 217, 217, 0.00) -5.02%, rgba(217, 217, 217, 0.04) 27.86%, rgba(217, 217, 217, 0.03) 46.25%, rgba(217, 217, 217, 0.06) 89.31%, rgba(217, 217, 217, 0.00) 102%);
   backdrop-filter: blur(5px);
   position: fixed;
+}
+
+.header .logo {
+  cursor: pointer;
 }
 
 .header.botoes {
@@ -64,11 +68,18 @@
   background-color: #0000003a;
   border-radius: 10px;
   border-color: #ffffff17;
-  margin-top: 2.3rem;
-  transition: width, 0.2s;
+  margin-top: 2.25rem;
+  transition: width 0.2s, margin-top 0.2s;
+}
+
+.portfolioDropdown:hover .portfolio-menu {
+  display: block;
+  ;
 }
 
 .portfolio-botoes {
+  display: flex;
+  flex-direction: column;
   gap: 10px;
 }
 
@@ -104,9 +115,6 @@
   gap: 500px;
 }
 
-.portfolioDropdown:hover .portfolio-menu {
-  display: block;
-}
 
 .contato-menu {
   font-family: poppins;
@@ -118,7 +126,7 @@
   background-color: #0000003a;
   border-radius: 10px;
   border-color: #ffffff17;
-  margin-top: 2.3rem;
+  margin-top: 2.25rem;
   transition: width, 0.2s;
 }
 

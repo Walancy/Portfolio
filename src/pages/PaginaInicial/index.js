@@ -11,19 +11,26 @@ import Perfil from "../../assets/Perfil.svg";
 import { Header } from "../../components/Header/header";
 
 export const PaginaInicial = () => {
+
+
+  const IconeLink = ({ src, alt, link }) => (
+    <a href={link} target="_blank" rel="noopener noreferrer">
+      <img src={src} alt={alt} />
+    </a>
+  );
+
   return (
     <div>
-      <div className="header">
+      <section id="inicioHeader" className="header">
         <Header />
-      </div>
-      <div className="inicio">
+      </section>
+      <section id="PageInicio" className="inicio">
         <div className="inicio-box">
           <div className="frase">
             <a>
-              Design e programação que contam histórias e <span className="gradiente-frase">conquistam corações.</span>
+              Olá, eu me chamo Walancy e sou <br></br><span className="gradiente-frase">designer e programador</span>
+              <hr className="separador" />
             </a>
-
-            <hr className="separador" />
           </div>
 
           <div className="mensagem">
@@ -44,30 +51,30 @@ export const PaginaInicial = () => {
           <div className="softwares">
             <div className="softwaresUso">
               <p>
-                Softwares que uso:
+                Softwares e linguagens que uso:
               </p>
             </div>
             <div className="icones">
-              <img src={PhotoshopIcon} alt="Photoshop" />
-              <img src={AfterEffectsIcon} alt="After Effects" />
-              <img src={IllustratorIcon} alt="Illustrator" />
-              <img src={CSSicon} alt="CSS" />
-              <img src={HTMLicon} alt="HTML" />
-              <img src={JavaScriptIcon} alt="JavaScript" />
-              <img src={ReactIcon} alt="React" />
-              <img src={FigmaIcon} alt="Figma" />
+              <IconeLink src={FigmaIcon} alt="Figma" link="https://www.figma.com/" />
+              <IconeLink src={PhotoshopIcon} alt="Photoshop" link="https://www.adobe.com/products/photoshop.html" />
+              <IconeLink src={AfterEffectsIcon} alt="After Effects" link="https://www.adobe.com/products/aftereffects.html" />
+              <IconeLink src={IllustratorIcon} alt="Illustrator" link="https://www.adobe.com/products/illustrator.html" />
+              <IconeLink src={CSSicon} alt="CSS" link="https://developer.mozilla.org/en-US/docs/Web/CSS" />
+              <IconeLink src={HTMLicon} alt="HTML" link="https://developer.mozilla.org/en-US/docs/Web/HTML" />
+              <IconeLink src={JavaScriptIcon} alt="JavaScript" link="https://developer.mozilla.org/en-US/docs/Web/JavaScript" />
+              <IconeLink src={ReactIcon} alt="React" link="https://reactjs.org/" />
             </div>
           </div>
         </div>
-      </div>
-      <div className="sobre-mim">
+      </section>
+      <section id="sobreMim" className="sobre-mim">
         <div className="sobre-esquerda">
           <div className="foto">
             <img src={Perfil} alt="Perfil" />
           </div>
           <div className="info">
-            <div className="design"><span className="quatroAnos">+de 4 Anos<br></br> </span>de experiência com design.</div>
-            <div className="programacao"><span className="doisAnos">+de 2 Anos<br></br> </span>de experiência com programação.</div>
+            <div className="design"><span className="quatroAnos">+de 4 Anos<br></br> </span>de experiência <br></br>com design.</div>
+            <div className="programacao"><span className="doisAnos">+de 2 Anos<br></br> </span>de experiência <br></br>com programação.</div>
           </div>
         </div>
         <div className="sobre-divisao">
@@ -79,12 +86,67 @@ export const PaginaInicial = () => {
             <a>eu me chamo Walancy, e sou a mente criativa por trás da Sant ART. Com mais de quatro anos de experiência na área de design e mais de 2 anos como programador, minha jornada tem sido marcada por uma paixão inabalável por transformar ideias em realidade visual. Cada projeto é uma oportunidade de mergulhar no universo das formas, cores e conceitos do design e da programação, criando peças que não apenas agradam esteticamente, mas também contam histórias e provocam emoções. É um privilégio poder compartilhar essa jornada com clientes e colaboradores, buscando sempre inovação e excelência em cada criação.</a>
           </div>
         </div>
-      </div>
-      <div className="oQueFaco"></div>
-      <div className="portfolio"></div>
-      <div className="caixa"></div>
-      <div className="habilidades"></div>
-      <div className="padding"></div>
+      </section>
+      <section className="oQueFaco">
+        <div className="oQueFaco-esquerda">
+          <a className="faco-frase01">O que <br></br>eu Faço?</a>
+
+          <a className="faco-frase02">Transformo ideias em experiências visuais envolventes, combinando habilidades em código e estética.
+            <span><br></br>Cada projeto conta uma história e provoca emoções, criando um mundo digital belo e funcional. Vamos juntos construir um universo inspirador através do design e da programação.
+            </span></a>
+
+        </div>
+        <div className="oQueFaco-direita">
+          <div className="bloco ">
+            <hr className="barra"></hr>
+            <a><span className="bold">Dev. Front-end</span>Programo a estrutura front-end de um projeto, utilizando
+              linguagens de programação como: html, css, js, react, etc.</a>
+          </div>
+
+          <div className="bloco">
+            <hr className="barra"></hr>
+            <a><span className="bold">Social media.</span>Crio  designs  para redes sociais
+              que dão vida e identidade para perfis.</a>
+          </div>
+
+          <div className="bloco">
+            <hr className="barra"></hr>
+            <a><span className="bold">UX/UI Design.</span>Construo sites e protótipos visando
+              a usabilidade e experiência do usuario.</a>
+          </div>
+
+          <div className="bloco">
+            <hr className="barra"></hr>
+            <a><span className="bold">Motion Design.</span>Aplico vida e movimento à imagens e textos para
+              criar videos,  gifs e animações que chmam atenção.</a>
+          </div>
+
+          <div className="bloco">
+            <hr className="barra"></hr>
+            <a><span className="bold">Logotipo e identidade visual.</span>Desenvolvo e aplico ideias que representam e
+              dão vida ao rosto de projetos e empresas.</a>
+          </div>
+        </div>
+      </section>
+      <section className="projetos">
+        <div className="titulo">Meus projetos</div>
+        <div>
+          <button className="front-end"></button>
+          <button className="Social-midia"></button>
+          <button className="ux-ui"></button>
+          <button className="Identidade-visual"></button>
+          <button className="Motion-design"></button>
+        </div>
+        <div>
+          <div></div>
+          <div></div>
+          <div></div>
+          <div></div>
+        </div>
+      </section>
+      <section className="caixa"></section>
+      <section className="habilidades"></section>
+      <section className="padding"></section>
     </div>
-  );
+  )
 };

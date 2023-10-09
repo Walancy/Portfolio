@@ -37,7 +37,7 @@ body {
 }
 
 .frase {
-  width: 350px;
+  width: 380px;
   color: #fff;
   text-align: center;
   font-family: Clash Display;
@@ -55,6 +55,20 @@ body {
   font-family: Clash Display;
   font-style: normal;
   font-weight: 600;
+
+  display: inline-block;
+  overflow: hidden;
+  white-space: nowrap;
+  border-right: 2px solid #000;
+  animation: blink-caret 0.75s infinite alternate;
+}
+
+@keyframes blink-caret {
+
+  from,
+  to {
+    border-color: transparent;
+  }
 }
 
 .separador {
@@ -133,7 +147,6 @@ body {
 }
 
 .icones {
-  position: absolute;
   display: flex;
   flex-direction: row;
   align-items: center;
@@ -151,10 +164,10 @@ body {
   width: 35px;
 }
 
-/*---------------------------------container "sobre mim"-------------------------------*/
+/*---------------------------------sessão "sobre mim"-------------------------------*/
 
 .sobre-mim {
-  height: 40rem;
+  height: 35rem;
   display: flex;
   flex-direction: row;
   background: radial-gradient(59.41% 52.44% at 46.04% 47.71%, rgba(189, 0, 255, 0.13) 0%, rgba(189, 0, 255, 0.00) 100%), linear-gradient(91deg, rgba(217, 217, 217, 0.25) -5.03%, rgba(217, 217, 217, 0.00) -5.02%, rgba(217, 217, 217, 0.05) 27.86%, rgba(217, 217, 217, 0.04) 46.25%, rgba(217, 217, 217, 0.09) 89.31%, rgba(217, 217, 217, 0.00) 102%);
@@ -193,7 +206,7 @@ body {
   justify-content: center;
   width: 40%;
   line-height: 90%;
-  font-size: 20px;
+  font-size: 15px;
   font-weight: 300;
   gap: 3.5rem;
 }
@@ -209,7 +222,7 @@ body {
   -webkit-text-fill-color: transparent;
   font-family: Clash Display;
   font-style: normal;
-  font-size: 40px;
+  font-size: 32px;
   font-weight: 600;
 }
 
@@ -225,7 +238,7 @@ body {
   -webkit-text-fill-color: transparent;
   font-family: Clash Display;
   font-style: normal;
-  font-size: 40px;
+  font-size: 32px;
 
   font-weight: 600;
 }
@@ -251,7 +264,6 @@ body {
   display: flex;
   flex-direction: column;
   font-weight: 200;
-  transition: font-weight 0.2s;
 }
 
 .ola {
@@ -265,10 +277,6 @@ body {
   font-weight: 600;
 }
 
-.texto:hover {
-  font-weight: 500;
-}
-
 .sobre-div {
   background: linear-gradient(180deg, #400057 0%, #0057FF 100%);
   width: 4px;
@@ -277,3 +285,107 @@ body {
   border: none;
   transition: height 0.2s;
 }
+
+/*---------------------------------sessão "o que eu faço?"-------------------------------*/
+
+.oQueFaco {
+  background: radial-gradient(47.11% 47.09% at 38.05% 52.91%, rgba(189, 0, 255, 0.20) 0%, rgba(0, 0, 0, 0.00) 100%), linear-gradient(91deg, rgba(217, 217, 217, 0.15) -5.03%, rgba(217, 217, 217, 0.00) -5.02%, rgba(217, 217, 217, 0.03) 27.86%, rgba(217, 217, 217, 0.02) 46.25%, rgba(217, 217, 217, 0.05) 89.31%, rgba(217, 217, 217, 0.00) 102%);
+  height: 47rem;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 2rem;
+  font-family: clash display;
+}
+
+.oQueFaco-esquerda {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 3rem;
+  transition: margin-left 0.2s;
+}
+
+.oQueFaco-esquerda:hover {
+  margin-left: 2rem;
+}
+
+.faco-frase01 {
+  background: linear-gradient(246deg, #BD00FF 64.79%, #0057FF 108.34%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-size: 92.622px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 107.023%;
+}
+
+.faco-frase02 {
+  width: 25rem;
+  color: #fff;
+  font-weight: 300;
+  font-size: 18px;
+}
+
+.faco-frase02 span {
+  color: #919191;
+}
+
+.oQueFaco-direita {
+  width: 50%;
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  flex-direction: column;
+  transition: gap 0.2s;
+}
+
+.oQueFaco-direita:hover {
+  gap: 0.3rem;
+}
+
+.bloco {
+  border-radius: 20px;
+  background: rgba(217, 217, 217, 0.05);
+  width: 32rem;
+  height: 5rem;
+  padding: 0.7rem;
+  color: #fff;
+
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+
+.barra {
+  padding: 6.5px;
+  height: 3.3rem;
+  border-radius: 25px;
+  background: linear-gradient(186deg, #BD00FF -18.06%, #0057FF 120.1%);
+  border: none;
+  margin: 1.2rem;
+}
+
+.bloco a {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  letter-spacing: 1px;
+  font-size: 14px;
+  line-height: 15px;
+  gap: 10px;
+  margin-right: 1rem;
+  font-weight: 200;
+}
+
+.bloco .bold {
+  font-weight: 500;
+  font-size: 20px;
+}
+
+/*---------------------------------sessão "projetos"-------------------------------*/
+
+.projetos {}
