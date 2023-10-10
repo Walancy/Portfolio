@@ -339,11 +339,12 @@ body {
   align-items: center;
   gap: 1rem;
   flex-direction: column;
-  transition: gap 0.2s;
+  transition: margin-right 0.2s, gap 0.2s;
 }
 
 .oQueFaco-direita:hover {
-  gap: 0.3rem;
+  margin-right: 1rem;
+  gap: 0.8rem;
 }
 
 .bloco {
@@ -388,4 +389,68 @@ body {
 
 /*---------------------------------sessão "projetos"-------------------------------*/
 
-.projetos {}
+.projetos {
+  display: flex;
+  flex-direction: column;
+  height: 40rem;
+}
+
+.titulo {
+  display: flex;
+  align-items: baseline;
+  padding: 5rem 0 5rem 10rem;
+}
+
+.titulo a {
+  background: linear-gradient(88deg, #0057FF -12.82%, #BD00FF 100.53%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-family: Clash Display;
+  font-size: 30px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+}
+
+.conteudo {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.conteudo .botoes button {
+  font-family: clash display;
+  font-size: 15px;
+  color: #fff;
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: 0 1rem 0 1rem;
+  transition: font-weight 0.2s, padding 0.2s;
+}
+
+.conteudo .botoes button:hover {
+  padding: 0 2rem 0 2rem;
+  font-weight: 500;
+}
+
+.botoes {
+  gap: 10rem;
+}
+
+.hr1 {
+  width: 2rem;
+  height: 1px;
+  background-color: #ffffff;
+  border: none;
+  border-radius: 20px;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+  transition: width 0.3s, margin-top 0.3s;
+}
+
+.hr1.hr1-ativado {
+  width: 3rem;
+  margin-top: 0.5rem;
+}

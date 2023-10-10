@@ -19,6 +19,11 @@ export const PaginaInicial = () => {
     </a>
   );
 
+  const ativarDesativarHr = () => {
+    const hr1 = document.getElementById('hr1');
+    hr1.classList.toggle('hr1-ativado');
+  };
+
   return (
     <div>
       <section id="inicioHeader" className="header">
@@ -128,20 +133,26 @@ export const PaginaInicial = () => {
           </div>
         </div>
       </section>
-      <section className="projetos">
-        <div className="titulo">Meus projetos</div>
-        <div>
-          <button className="front-end"></button>
-          <button className="Social-midia"></button>
-          <button className="ux-ui"></button>
-          <button className="Identidade-visual"></button>
-          <button className="Motion-design"></button>
+      <section id="projetos" className="projetos">
+        <div className="titulo">
+          <a>
+            Meus projetos
+          </a>
         </div>
-        <div>
-          <div></div>
-          <div></div>
-          <div></div>
-          <div></div>
+        <div className="conteudo">
+          <div className="botoes">
+            <button className="botao" onClick={ativarDesativarHr}>Sites<hr className="hr1" id="hr1"></hr></button>
+            <button className="botao" onClick={ativarDesativarHr}>Social Mídia<hr className="hr2" id="hr2"></hr></button>
+            <button className="botao" onClick={ativarDesativarHr}>UX/UI<hr className="hr3" id="hr3"></hr></button>
+            <button className="botao" onClick={ativarDesativarHr}>ID. Visual<hr className="hr4" id="hr4"></hr></button>
+            <button className="botao" onClick={ativarDesativarHr}>Motion<hr className="hr5" id="hr5"></hr></button>
+          </div>
+          <div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+          </div>
         </div>
       </section>
       <section className="caixa"></section>
