@@ -4,7 +4,7 @@ body {
 }
 
 ::selection {
-  background-color: rgb(106, 0, 255);
+  background-color: #8619ff;
   color: #ffffff;
 }
 
@@ -294,7 +294,7 @@ body {
   display: flex;
   flex-direction: row;
   align-items: center;
-  gap: 2rem;
+  gap: 0rem;
   font-family: clash display;
 }
 
@@ -303,12 +303,7 @@ body {
   display: flex;
   flex-direction: column;
   align-items: center;
-  gap: 3rem;
   transition: margin-left 0.2s;
-}
-
-.oQueFaco-esquerda:hover {
-  margin-left: 2rem;
 }
 
 .faco-frase01 {
@@ -370,7 +365,7 @@ body {
   margin: 1.2rem;
 }
 
-.bloco a {
+.bloco p {
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -401,7 +396,7 @@ body {
   padding: 5rem 0 5rem 10rem;
 }
 
-.titulo a {
+.titulo p {
   background: linear-gradient(88deg, #0057FF -12.82%, #BD00FF 100.53%);
   background-clip: text;
   -webkit-background-clip: text;
@@ -431,7 +426,7 @@ body {
 }
 
 .conteudo .botoes button:hover {
-  padding: 0 2rem 0 2rem;
+  padding: 0 1.5rem 0 1.5rem;
   font-weight: 500;
 }
 
@@ -439,18 +434,24 @@ body {
   gap: 10rem;
 }
 
-.hr1 {
-  width: 2rem;
-  height: 1px;
-  background-color: #ffffff;
+.botoes hr{
   border: none;
-  border-radius: 20px;
-  margin-top: 1rem;
-  margin-bottom: 1rem;
-  transition: width 0.3s, margin-top 0.3s;
+  background: linear-gradient(280deg, #BD00FF 34.79%, #0057FF 108.34%);
+  padding: 2px;
+  border-radius: 10px;
 }
 
-.hr1.hr1-ativado {
-  width: 3rem;
-  margin-top: 0.5rem;
+@keyframes openFromCenter {
+  from {
+    width: 0;
+    
+  }
+  to {
+    width: 90%;
+    
+  }
+}
+
+.hr-anim {
+  animation: openFromCenter 0.3s;
 }

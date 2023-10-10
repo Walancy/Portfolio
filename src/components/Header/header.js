@@ -1,42 +1,72 @@
-import React, { useEffect } from 'react';
+import React, { useEffect, useState } from "react";
 import "./header.css";
 import LogoHeader from "../../assets/logo.svg";
 
 export const Header = () => {
+  const [isDialogOpen, setIsDialogOpen] = useState(true);
+
+  const closeDialog = () => {
+    setIsDialogOpen(false);
+  };
+
   useEffect(() => {
-    document.getElementById('botaoSobreMim').addEventListener('click', function () {
-      document.getElementById('sobreMim').scrollIntoView({ behavior: 'smooth' });
-    });
+    document
+      .getElementById("botaoSobreMim")
+      .addEventListener("click", function () {
+        document
+          .getElementById("sobreMim")
+          .scrollIntoView({ behavior: "smooth" });
+      });
 
     return () => {
-      document.getElementById('botaoSobreMim').removeEventListener('click', function () {
-        document.getElementById('sobreMim').scrollIntoView({ behavior: 'smooth' });
-      });
-    }
+      document
+        .getElementById("botaoSobreMim")
+        .removeEventListener("click", function () {
+          document
+            .getElementById("sobreMim")
+            .scrollIntoView({ behavior: "smooth" });
+        });
+    };
   }, []);
 
   useEffect(() => {
-    document.getElementById('botaoProjetos').addEventListener('click', function () {
-      document.getElementById('projetos').scrollIntoView({ behavior: 'smooth' });
-    });
+    document
+      .getElementById("botaoProjetos")
+      .addEventListener("click", function () {
+        document
+          .getElementById("projetos")
+          .scrollIntoView({ behavior: "smooth" });
+      });
 
     return () => {
-      document.getElementById('botaoProjetos').removeEventListener('click', function () {
-        document.getElementById('projetos').scrollIntoView({ behavior: 'smooth' });
-      });
-    }
+      document
+        .getElementById("botaoProjetos")
+        .removeEventListener("click", function () {
+          document
+            .getElementById("projetos")
+            .scrollIntoView({ behavior: "smooth" });
+        });
+    };
   }, []);
 
   useEffect(() => {
-    document.getElementById('logoInicio').addEventListener('click', function () {
-      document.getElementById('inicioHeader').scrollIntoView({ behavior: 'smooth' });
-    });
+    document
+      .getElementById("logoSant")
+      .addEventListener("click", function () {
+        document
+          .getElementById("inicioHeader")
+          .scrollIntoView({ behavior: "smooth" });
+      });
 
     return () => {
-      document.getElementById('logoInicio').removeEventListener('click', function () {
-        document.getElementById('inicioHeader').scrollIntoView({ behavior: 'smooth' });
-      });
-    }
+      document
+        .getElementById("logoSant")
+        .removeEventListener("click", function () {
+          document
+            .getElementById("inicioHeader")
+            .scrollIntoView({ behavior: "smooth" });
+        });
+    };
   }, []);
 
   return (
@@ -44,20 +74,26 @@ export const Header = () => {
       <div className="Header">
         <div className="esquerda">
           <div id="logoInicio" className="logo">
-            <img
-              src={LogoHeader}
-              alt="logo"
-              className="logoSant"
-            />
+            <img src={LogoHeader} alt="logo" id="logoSant" className="logoSant" />
+            {isDialogOpen && (
+              <div className="dialog">
+                <p>Clique na logo para voltar ao inicio.</p>
+                <button onClick={closeDialog}>fechar</button>
+              </div>
+            )}
           </div>
         </div>
         <div className="meio">
           <div className="botoes">
             <div className="sobre">
-              <button id="botaoSobreMim" className="botao-sobre">Sobre mim</button>
+              <button id="botaoSobreMim" className="botao-sobre">
+                Sobre mim
+              </button>
             </div>
             <div className="sobre">
-              <button id="botaoProjetos" className="botao-sobre">Projetos</button>
+              <button id="botaoProjetos" className="botao-sobre">
+                Projetos
+              </button>
             </div>
             <div className="portfolioDropdown">
               <button>Portfólios</button>
@@ -93,7 +129,6 @@ export const Header = () => {
             <div className="contatoDropdown">
               <button>Contatos</button>
               <div className="contato-menu">
-
                 <div className="contato-botoes">
                   <a
                     href="https://api.whatsapp.com/send/?phone=5544998043997"
