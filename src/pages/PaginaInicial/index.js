@@ -43,6 +43,7 @@ export const PaginaInicial = () => {
       </section>
       <section id="PageInicio" className="inicio">
         <div className="inicio-box">
+          <p className="desenvolvimento">Portfólio em desenvolvimento!</p>
           <div className="frase">
             <p>
               Olá, eu me chamo Walancy e sou <br></br>

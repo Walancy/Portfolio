@@ -21,6 +21,21 @@ body {
   background-color: #252525;
 }
 
+.desenvolvimento{
+  font-family: Clash Display;
+  color: #ffffff;
+  background: linear-gradient(200deg, #BD00FF 0%, #0057FF 100%);
+  padding: 0.5rem 1.5rem;
+  border-radius: 10px;
+  font-weight: 300;
+  transition: padding 0.2s, font-weight 0.2s;
+}
+
+.desenvolvimento:hover{
+  padding: 0.5rem 2.5rem;
+  font-weight: 500;
+}
+
 .inicio {
   height: 44vw;
   display: flex;
