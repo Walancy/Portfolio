@@ -7,7 +7,20 @@ import HTMLicon from "../../assets/HTML.svg";
 import JavaScriptIcon from "../../assets/JavaScript.svg";
 import ReactIcon from "../../assets/React.svg";
 import FigmaIcon from "../../assets/Figma.svg";
+
+import Linkedin from "../../assets/SessãoConectar/Linkedin.svg";
+import Instagram from "../../assets/SessãoConectar/Instagram.svg";
+import GitHub from "../../assets/SessãoConectar/GitHub.svg";
+import WhatsApp from "../../assets/SessãoConectar/WhatsApp.svg";
+import Behance from "../../assets/SessãoConectar/Behance.svg";
+
 import Perfil from "../../assets/Perfil.svg";
+import Web from "../../assets/web.svg";
+import UXart from "../../assets/UXart.svg";
+import Logofolio from "../../assets/Logofolio.svg";
+import SocialMedia from "../../assets/SocialMidia.svg";
+import MotionGIF from "../../assets/motion.gif";
+
 import { Header } from "../../components/Header/header";
 
 export const PaginaInicial = () => {
@@ -43,7 +56,7 @@ export const PaginaInicial = () => {
       </section>
       <section id="PageInicio" className="inicio">
         <div className="inicio-box">
-          <p className="desenvolvimento">Portfólio em desenvolvimento!</p>
+          <p className="desenvolvimento">Site em desenvolvimento!</p>
           <div className="frase">
             <p>
               Olá, eu me chamo Walancy e sou <br></br>
@@ -160,125 +173,119 @@ export const PaginaInicial = () => {
           </div>
         </div>
       </section>
-      <section className="oQueFaco">
-        <div className="oQueFaco-esquerda">
-          <p className="faco-frase01">
-            O que <br></br>eu Faço?
-          </p>
-
-          <p className="faco-frase02">
-            Transformo ideias em experiências visuais envolventes, combinando
-            habilidades em código e estética.
-            <span>
-              <br></br>Cada projeto conta uma história e provoca emoções,
-              criando um mundo digital belo e funcional. Vamos juntos construir
-              um universo inspirador através do design e da programação.
-            </span>
-          </p>
+      <section className="oQueFaco" id="oQueFaco">
+        <div className="frases">
+          <p className="titulo">O que eu faço?</p>
+          <p className="texto">Minha paixão reside em dar vida a conceitos através de experiências visuais que transcendem o comum. Uma fusão única de habilidades em código e sensibilidade estética me permite criar obras que não só são funcionais, mas também verdadeiramente envolventes.
+            <span>Cada projeto é uma oportunidade de contar uma história, de imergir em um universo de emoções e conexões. Trabalho incansavelmente para forjar um mundo digital que não apenas deslumbra com sua beleza, mas também impacta com sua eficiência.</span></p>
         </div>
-        <div className="oQueFaco-direita">
-          <div className="bloco ">
-            <hr className="barra"></hr>
-            <p>
-              <span className="bold">Dev. Front-end</span>Programo a estrutura
-              front-end de um projeto, utilizando linguagens de programação
-              como: html, css, js, react, etc.
-            </p>
-          </div>
+        <div className="caixas" id="caixas">
+          <div className="caixa" id="dev-frontend">
+            <hr className="forma"></hr>
+            <div className="texto">
+              <span className="titulo">Dev. Front-end<br></br></span>
+              <span>Tenho experiência e habilidades no desenvolvimento da estrutura front-end de projetos, empregando diversas linguagens de programação, tais como HTML, CSS, JavaScript, React, entre outras. Além disso, estou apto a criar interfaces atraentes e funcionais, garantindo uma experiência de usuário intuitiva e envolvente.</span>
+              Estou sempre atualizado com as melhores práticas e tendências do mercado, buscando proporcionar resultados de alta qualidade e desempenho para os projetos em que trabalho
 
-          <div className="bloco">
-            <hr className="barra"></hr>
-            <p>
-              <span className="bold">Social media.</span>Crio designs para redes
-              sociais que dão vida e identidade para perfis.
-            </p>
-          </div>
+            </div>
+            <img src={Web} alt="projeto" className="projeto" />
 
-          <div className="bloco">
-            <hr className="barra"></hr>
-            <p>
-              <span className="bold">UX/UI Design.</span>Construo sites e
-              protótipos visando a usabilidade e experiência do usuario.
-            </p>
+            <div className="botao">
+              <button>
+                <p>Ver projetos</p>
+              </button>
+            </div>
           </div>
+          <div className="caixa" id="ux/ui">
+            <hr className="forma"></hr>
+            <div className="texto">
+              <span className="titulo">UX/UI Design.<br></br></span>
+              Tenho expertise na construção de sites e protótipos, com foco primordial na usabilidade e na experiência do usuário. Através de uma abordagem centrada no usuário, desenvolvo interfaces intuitivas e funcionais, buscando proporcionar uma navegação fluida e agradável. Meu objetivo é criar plataformas que não apenas impressionem visualmente, mas também ofereçam uma experiência envolvente e satisfatória para os visitantes.
 
-          <div className="bloco">
-            <hr className="barra"></hr>
-            <p>
-              <span className="bold">Motion Design.</span>Aplico vida e
-              movimento à imagens e textos para criar videos, gifs e animações
-              que chmam atenção.
-            </p>
-          </div>
+            </div>
 
-          <div className="bloco">
-            <hr className="barra"></hr>
-            <p>
-              <span className="bold">Logotipo e identidade visual.</span>
-              Desenvolvo e aplico ideias que representam e dão vida ao rosto de
-              projetos e empresas.
-            </p>
+            <img src={UXart} alt="projeto" className="projeto" />
+
+            <div className="botao">
+              <button>
+                <p>Ver projetos</p>
+              </button>
+            </div>
           </div>
+          <div className="caixa" id="Logotipo">
+            <hr className="forma"></hr>
+            <div className="texto">
+              <span className="titulo">Logotipo e identidade visual.<br></br></span>
+              Sou especializado em conceber e implementar ideias que não apenas representam, mas também conferem uma identidade vibrante e distintiva aos projetos e empresas. Minha abordagem criativa visa não apenas criar designs, mas também contar histórias visuais que ressoam com o público-alvo. Cada projeto é uma oportunidade de dar forma e personalidade à marca, proporcionando uma presença marcante e duradoura no mercado.
+            </div>
+            <img src={Logofolio} alt="projeto" className="projeto" />
+
+            <div className="botao">
+              <button>
+                <p>Ver projetos</p>
+              </button>
+            </div>
+          </div>
+          <div className="caixa" id="SocialMedia">
+            <hr className="forma"></hr>
+            <div className="texto">
+              <span className="titulo">Social media.<br></br></span>
+              Desenvolvo designs exclusivos e impactantes para redes sociais, proporcionando uma identidade única e envolvente para perfis online. Meu trabalho visa não apenas atrair a atenção, mas também criar uma experiência visual que realmente represente a essência e a mensagem de cada perfil. Utilizo técnicas e criatividade para dar vida às plataformas, garantindo uma presença online marcante e memorável.
+            </div>
+            <img src={SocialMedia} alt="projeto" className="projeto" />
+
+            <div className="botao">
+              <button>
+                <p>Ver projetos</p>
+              </button>
+            </div>
+          </div>
+          <div className="caixa" id="MotionDesign">
+            <hr className="forma"></hr>
+            <div className="texto">
+              <span className="titulo">Motion Design.<br></br></span>
+              Utilizo minha habilidade para infundir vida e movimento em imagens e textos, resultando na criação de vídeos, GIFs e animações que capturam imediatamente a atenção do espectador. Minha expertise reside em transformar conceitos estáticos em experiências visuais dinâmicas e envolventes. Cada projeto é uma oportunidade de criar conteúdos visuais memoráveis e impactantes, garantindo uma presença marcante e diferenciada.
+            </div>
+            <img src={MotionGIF} alt="projeto" className="projeto" />
+
+            <div className="botao">
+              <button>
+                <p>Ver projetos</p>
+              </button>
+            </div>
+          </div>
+        </div>
+
+      </section>
+      <section className="conectar">
+        <p className="frase">Vamos nos conectar!</p>
+        <div className="icones">
+          <img src={Linkedin} alt="icon" className="icon" />
+          <img src={Instagram} alt="icon" className="icon" />
+          <img src={GitHub} alt="icon" className="icon" />
+          <img src={WhatsApp} alt="icon" className="icon" />
+          <img src={Behance} alt="icon" className="icon" />
+        </div>
+        <div className="forma">
+          <div className="conectar-frase">
+            <span>Atenção.<br></br></span>
+            <br></br>Não perca mais tempo, fale comigo ainda<br></br>
+            hoje e vamos desenvolver e aplicar sua ideia!
+          </div>
+          <a
+            href="https://api.whatsapp.com/send/?phone=5544998043997"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="contate"
+          >
+            <button>Contate-me</button>
+          </a>
         </div>
       </section>
-      <section id="projetos" className="projetos">
-        <div className="titulo">
-          <p>Meus projetos</p>
-        </div>
-        <div className="conteudo">
-          <div className="botoes">
-            <button className="botao" onClick={() => ativarDesativarHr("hr1")}>
-              Sites
-              <hr
-                className="hr1 hr-anim"
-                id="hr1"
-                style={{ display: "none" }}
-              ></hr>
-            </button>
-            <button className="botao" onClick={() => ativarDesativarHr("hr2")}>
-              Social Mídia
-              <hr
-                className="hr2 hr-anim"
-                id="hr2"
-                style={{ display: "none" }}
-              ></hr>
-            </button>
-            <button className="botao" onClick={() => ativarDesativarHr("hr3")}>
-              UX/UI
-              <hr
-                className="hr3 hr-anim"
-                id="hr3"
-                style={{ display: "none" }}
-              ></hr>
-            </button>
-            <button className="botao" onClick={() => ativarDesativarHr("hr4")}>
-              ID. Visual
-              <hr
-                className="hr4 hr-anim"
-                id="hr4"
-                style={{ display: "none" }}
-              ></hr>
-            </button>
-            <button className="botao" onClick={() => ativarDesativarHr("hr5")}>
-              Motion
-              <hr
-                className="hr5 hr-anim"
-                id="hr5"
-                style={{ display: "none" }}
-              ></hr>
-            </button>
-          </div>
-          <div>
-            <div></div>
-            <div></div>
-            <div></div>
-            <div></div>
-          </div>
-        </div>
-      </section>
-      <section className="caixa"></section>
       <section className="habilidades"></section>
-      <section className="padding"></section>
+      <section className="padding">
+        <a>© 2023 Walancy Heleonai Ferreira dos Santos. <span>Todos os direitos reservados.</span></a>
+      </section>
     </div>
   );
 };

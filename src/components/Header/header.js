@@ -1,13 +1,8 @@
-import React, { useEffect, useState } from "react";
+import React, { useEffect } from "react";
 import "./header.css";
 import LogoHeader from "../../assets/logo.svg";
 
 export const Header = () => {
-  const [isDialogOpen, setIsDialogOpen] = useState(true);
-
-  const closeDialog = () => {
-    setIsDialogOpen(false);
-  };
 
   useEffect(() => {
     document
@@ -34,7 +29,7 @@ export const Header = () => {
       .getElementById("botaoProjetos")
       .addEventListener("click", function () {
         document
-          .getElementById("projetos")
+          .getElementById("oQueFaco")
           .scrollIntoView({ behavior: "smooth" });
       });
 
@@ -43,7 +38,7 @@ export const Header = () => {
         .getElementById("botaoProjetos")
         .removeEventListener("click", function () {
           document
-            .getElementById("projetos")
+            .getElementById("oQueFaco")
             .scrollIntoView({ behavior: "smooth" });
         });
     };
@@ -75,12 +70,6 @@ export const Header = () => {
         <div className="esquerda">
           <div id="logoInicio" className="logo">
             <img src={LogoHeader} alt="logo" id="logoSant" className="logoSant" />
-            {isDialogOpen && (
-              <div className="dialog">
-                <p>Clique na logo para voltar ao inicio.</p>
-                <button onClick={closeDialog}>fechar</button>
-              </div>
-            )}
           </div>
         </div>
         <div className="meio">
