@@ -100,15 +100,15 @@ export const Header = () => {
                     href="https://www.behance.net/walancy_dsgn"
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="uxui"
+                    className="Behance"
                   >
                     <div>Behance</div>
                   </a>
                   <a
-                    href="https://www.behance.net/walancy_dsgn"
+                    href="https://www.linkedin.com/in/walancy-h-f-dos-santos-5aa472198/"
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="socialmedia"
+                    className="Linkedin"
                   >
                     <div>Linkedin</div>
                   </a>

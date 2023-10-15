@@ -22,6 +22,8 @@ import SocialMedia from "../../assets/SocialMidia.svg";
 import MotionGIF from "../../assets/motion.gif";
 
 import { Header } from "../../components/Header/header";
+import React, { useEffect } from "react";
+
 
 export const PaginaInicial = () => {
   const IconeLink = ({ src, alt, link }) => (
@@ -29,6 +31,26 @@ export const PaginaInicial = () => {
       <img src={src} alt={alt} />
     </a>
   );
+
+  useEffect(() => {
+    document
+      .getElementById("voltar-inicio")
+      .addEventListener("click", function () {
+        document
+          .getElementById("inicioHeader")
+          .scrollIntoView({ behavior: "smooth" });
+      });
+
+    return () => {
+      document
+        .getElementById("voltar-inicio")
+        .removeEventListener("click", function () {
+          document
+            .getElementById("inicioHeader")
+            .scrollIntoView({ behavior: "smooth" });
+        });
+    }
+  });
 
   const ativarDesativarHr = (id) => {
     const hrElements = document.querySelectorAll(".conteudo hr");
@@ -260,11 +282,11 @@ export const PaginaInicial = () => {
       <section className="conectar">
         <p className="frase">Vamos nos conectar!</p>
         <div className="icones">
-          <img src={Linkedin} alt="icon" className="icon" />
-          <img src={Instagram} alt="icon" className="icon" />
-          <img src={GitHub} alt="icon" className="icon" />
-          <img src={WhatsApp} alt="icon" className="icon" />
-          <img src={Behance} alt="icon" className="icon" />
+          <IconeLink src={Linkedin} alt="icon" className="icon" link="https://www.linkedin.com/in/walancy-h-f-dos-santos-5aa472198/" />
+          <IconeLink src={Instagram} alt="icon" className="icon" />
+          <IconeLink src={GitHub} alt="icon" className="icon" />
+          <IconeLink src={WhatsApp} alt="icon" className="icon" />
+          <IconeLink src={Behance} alt="icon" className="icon" />
         </div>
         <div className="forma">
           <div className="conectar-frase">
@@ -282,7 +304,98 @@ export const PaginaInicial = () => {
           </a>
         </div>
       </section>
-      <section className="habilidades"></section>
+      <section className="habilidades">
+        <div className="texto">
+          <p><span>Minhas habilidades<br></br></span>
+            Ao longo desses anos, tive o privilégio de mergulhar em diversos campos da tecnologia e do design, o que me proporcionou a chance de explorar uma ampla variedade de ferramentas e linguagens. Como resultado, adquiri conhecimento e experiência em áreas que vão desde o desenvolvimento de software até a criação visual, incluindo, mas não se limitando a, aquelas mencionadas a seguir.</p>
+        </div>
+        <div className="items">
+          <div className="part1">
+            <div className="part-item">
+              <div>
+                <img src={FigmaIcon} className="icon" />
+              </div>
+              <div>
+                <p><span>Figma<br></br></span>
+                  + de 3 anos de experiência.</p>
+              </div>
+            </div>
+            <div className="part-item">
+              <div>
+                <img src={ReactIcon} className="icon" />
+              </div>
+              <div>
+                <p><span>React<br></br></span>
+                  + de 2 anos de experiência.</p>
+              </div>
+            </div>
+          </div>
+          <div className="part2">
+            <div className="part-item">
+              <div>
+                <img src={PhotoshopIcon} className="icon" />
+              </div>
+              <div>
+                <p><span>Photoshop<br></br></span>
+                  + de 5 anos de experiência.</p>
+              </div>
+            </div>
+            <div className="part-item">
+              <div>
+                <img src={JavaScriptIcon} className="icon" />
+              </div>
+              <div>
+                <p><span>JavaScript<br></br></span>
+                  + de 2 anos de experiência.</p>
+              </div>
+            </div>
+          </div>
+          <div className="part1">
+            <div className="part-item">
+              <div>
+                <img src={AfterEffectsIcon} className="icon" />
+              </div>
+              <div>
+                <p><span>After Effects<br></br></span>
+                  + de 4 anos de experiência.</p>
+              </div>
+            </div>
+            <div className="part-item">
+              <div>
+                <img src={CSSicon} className="icon" />
+              </div>
+              <div>
+                <p><span>CSS<br></br></span>
+                  + de 2 anos de experiência.</p>
+              </div>
+            </div>
+          </div>
+          <div className="part2">
+            <div className="part-item">
+              <div>
+                <img src={IllustratorIcon} className="icon" />
+              </div>
+              <div>
+                <p><span>Illustrator<br></br></span>
+                  + de 1 ano de experiência.</p>
+              </div>
+            </div>
+            <div className="part-item">
+              <div>
+                <img src={HTMLicon} className="icon" />
+              </div>
+              <div>
+                <p><span>HTML<br></br></span>
+                  + de 2 anos de experiência.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div className="voltar-inicio">
+          <button id="voltar-inicio">Voltar ao inicio.</button>
+        </div>
+      </section>
       <section className="padding">
         <a>© 2023 Walancy Heleonai Ferreira dos Santos. <span>Todos os direitos reservados.</span></a>
       </section>
