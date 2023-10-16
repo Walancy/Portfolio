@@ -1,4 +1,7 @@
+import React, { useEffect } from "react";
 import "./style.css";
+import "./styles-responsive.css";
+
 import PhotoshopIcon from "../../assets/Photoshop.svg";
 import AfterEffectsIcon from "../../assets/AfterEffects.svg";
 import IllustratorIcon from "../../assets/Illustrator.svg";
@@ -22,7 +25,6 @@ import SocialMedia from "../../assets/SocialMidia.svg";
 import MotionGIF from "../../assets/motion.gif";
 
 import { Header } from "../../components/Header/header";
-import React, { useEffect } from "react";
 
 
 export const PaginaInicial = () => {
@@ -78,7 +80,7 @@ export const PaginaInicial = () => {
       </section>
       <section id="PageInicio" className="inicio">
         <div className="inicio-box">
-          <p className="desenvolvimento">Site em desenvolvimento!</p>
+
           <div className="frase">
             <p>
               Olá, eu me chamo Walancy e sou <br></br>
@@ -208,10 +210,8 @@ export const PaginaInicial = () => {
               <span className="titulo">Dev. Front-end<br></br></span>
               <span>Tenho experiência e habilidades no desenvolvimento da estrutura front-end de projetos, empregando diversas linguagens de programação, tais como HTML, CSS, JavaScript, React, entre outras. Além disso, estou apto a criar interfaces atraentes e funcionais, garantindo uma experiência de usuário intuitiva e envolvente.</span>
               Estou sempre atualizado com as melhores práticas e tendências do mercado, buscando proporcionar resultados de alta qualidade e desempenho para os projetos em que trabalho
-
             </div>
             <img src={Web} alt="projeto" className="projeto" />
-
             <div className="botao">
               <button>
                 <p>Ver projetos</p>
@@ -278,31 +278,6 @@ export const PaginaInicial = () => {
           </div>
         </div>
 
-      </section>
-      <section className="conectar">
-        <p className="frase">Vamos nos conectar!</p>
-        <div className="icones">
-          <IconeLink src={Linkedin} alt="icon" className="icon" link="https://www.linkedin.com/in/walancy-h-f-dos-santos-5aa472198/" />
-          <IconeLink src={Instagram} alt="icon" className="icon" />
-          <IconeLink src={GitHub} alt="icon" className="icon" />
-          <IconeLink src={WhatsApp} alt="icon" className="icon" />
-          <IconeLink src={Behance} alt="icon" className="icon" />
-        </div>
-        <div className="forma">
-          <div className="conectar-frase">
-            <span>Atenção.<br></br></span>
-            <br></br>Não perca mais tempo, fale comigo ainda<br></br>
-            hoje e vamos desenvolver e aplicar sua ideia!
-          </div>
-          <a
-            href="https://api.whatsapp.com/send/?phone=5544998043997"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="contate"
-          >
-            <button>Contate-me</button>
-          </a>
-        </div>
       </section>
       <section className="habilidades">
         <div className="texto">
@@ -394,6 +369,31 @@ export const PaginaInicial = () => {
 
         <div className="voltar-inicio">
           <button id="voltar-inicio">Voltar ao inicio.</button>
+        </div>
+      </section>
+      <section className="conectar">
+        <p className="frase">Vamos nos conectar!</p>
+        <div className="icones">
+          <IconeLink src={Linkedin} alt="icon" className="icon" link="https://www.linkedin.com/in/walancy-h-f-dos-santos-5aa472198/" />
+          <IconeLink src={Instagram} alt="icon" className="icon" link="https://www.instagram.com/sant.dsg/" />
+          <IconeLink src={GitHub} alt="icon" className="icon" link="https://github.com/Walancy" />
+          <IconeLink src={WhatsApp} alt="icon" className="icon" link="https://api.whatsapp.com/send/?phone=5544998043997" />
+          <IconeLink src={Behance} alt="icon" className="icon" link="https://www.behance.net/walancy_dsgn" />
+        </div>
+        <div className="forma">
+          <div className="conectar-frase">
+            <span>Atenção.<br></br></span>
+            <br></br>Não perca mais tempo, fale comigo ainda<br></br>
+            hoje e vamos desenvolver e aplicar sua ideia!
+          </div>
+          <a
+            href="https://api.whatsapp.com/send/?phone=5544998043997"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="contate"
+          >
+            <button>Contate-me</button>
+          </a>
         </div>
       </section>
       <section className="padding">

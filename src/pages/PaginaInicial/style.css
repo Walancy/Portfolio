@@ -9,7 +9,7 @@ body {
 }
 
 ::-webkit-scrollbar {
-  width: 2px;
+  width: 0.2vw;
   transition: width 0.5s;
 }
 
@@ -28,9 +28,9 @@ body {
 
 .padding {
   background: linear-gradient(265deg, #0057FF -12.39%, #BD00FF 103.02%);
-  height: 3vw;
+  height: 3rem;
   color: #FFF;
-  font-size: 1vw;
+  font-size: 1rem;
   display: flex;
   font-weight: 200;
   align-items: center;
@@ -43,27 +43,9 @@ body {
   font-weight: 500;
 }
 
-.desenvolvimento {
-  font-family: Clash Display;
-  position: fixed;
-  bottom: 0vw;
-  right: 1vw;
-  color: #ffffff;
-  background: linear-gradient(200deg, #BD00FF 0%, #0057FF 100%);
-  padding: 0.5rem 1.5rem;
-  border-radius: 10px;
-  font-weight: 300;
-  transition: padding 0.2s, font-weight 0.2s;
-  cursor: not-allowed;
-}
-
-.desenvolvimento:hover {
-  padding: 0.5rem 2.5rem;
-  font-weight: 500;
-}
-
 .inicio {
-  height: 44vw;
+  width: 100%;
+  height: 45rem;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -78,17 +60,17 @@ body {
 }
 
 .inicio .frase {
-  width: 380px;
+  width: 25.4rem;
   color: #fff;
   text-align: center;
   font-family: Clash Display;
-  font-size: 30px;
+  font-size: 2rem;
   font-style: normal;
   font-weight: 500;
   line-height: 90%;
 }
 
-.gradiente-frase {
+.inicio .gradiente-frase {
   background: linear-gradient(271deg, #BD00FF 23.52%, #0057FF 143.29%);
   background-clip: text;
   -webkit-background-clip: text;
@@ -98,22 +80,11 @@ body {
   font-weight: 600;
 
   display: inline-block;
-  overflow: hidden;
-  white-space: nowrap;
-  border-right: 2px solid #000;
   animation: blink-caret 0.75s infinite alternate;
 }
 
-@keyframes blink-caret {
-
-  from,
-  to {
-    border-color: transparent;
-  }
-}
-
-.separador {
-  width: 178px;
+.inicio .separador {
+  width: 15rem;
   height: 1px;
   background-color: #ffffff;
   border: none;
@@ -123,71 +94,69 @@ body {
   transition: width 0.3s, margin-top 0.3s;
 }
 
-.frase:hover .separador {
-  margin-top: 0.5rem;
-  width: 330px;
+.inicio .frase:hover .separador {
+  margin-top: 0.2rem;
+  width: 25rem;
 }
 
 
-.mensagem {
+.inicio .mensagem {
   color: #5A5A5A;
   text-align: center;
   font-family: Clash Display;
-  font-size: 12px;
+  font-size: 0.8rem;
   font-style: normal;
   font-weight: 500;
   line-height: 107.3%;
-  width: 500px;
+  width: 35rem;
 
   flex-shrink: 0;
 }
 
-.contato .botao {
+.inicio .contato .botao {
   margin-top: 2rem;
   color: #fff;
   font-family: Clash Display;
-  font-size: 17px;
+  font-size: 1.2rem;
   letter-spacing: 0.3px;
   font-weight: 500;
   cursor: pointer;
   display: inline-flex;
-  padding: 19px 35px;
+  padding: 1.3rem 2rem;
   justify-content: center;
   align-items: center;
   border: none;
-  border-radius: 18.428px;
+  border-radius: 1rem;
   box-shadow: none;
   background: linear-gradient(96deg, #0057FF -29.23%, #BD00FF 90.4%);
-  transition: box-shadow 0.2s, padding 0.2s;
+  transition: box-shadow 0.2s, transform 0.2s;
 }
 
-.contato .botao:hover {
+.inicio .contato .botao:hover {
   box-shadow: 0px 0px 10px 7px rgba(100, 41, 255, 0.24);
-  padding: 23px 45px;
-
+  transform: scale(1.1);
 }
 
-.softwares {
-  margin-top: 7rem;
+.inicio .softwares {
+  margin-top: 3rem;
   display: flex;
   align-items: center;
   flex-direction: column;
   justify-content: center;
 }
 
-.softwaresUso {
+.inicio .softwaresUso {
   color: #5A5A5A;
   text-align: center;
   font-family: Clash Display;
-  font-size: 14px;
+  font-size: 0.9rem;
   font-style: normal;
   font-weight: 500;
   line-height: 107.3%;
-  margin-top: -4rem;
-  /* 17.541px */
 }
 
-.icones {
+.inicio .icones {
+  margin: 1rem;
   display: flex;
   flex-direction: row;
   align-items: center;
@@ -195,14 +164,15 @@ body {
   gap: 1rem;
 }
 
-.icones img {
+.inicio .icones img {
   display: flex;
-  width: 25px;
-  transition: width 0.15s;
+  width: 1.5rem;
+  transition: transform 0.15s, margin 0.15s;
 }
 
-.icones img:hover {
-  width: 35px;
+.inicio .icones img:hover {
+  margin: 0 0.5vw;
+  transform: scale(1.3);
 }
 
 /*---------------------------------sessão "sobre mim"-------------------------------*/
@@ -212,10 +182,9 @@ body {
   display: flex;
   flex-direction: row;
   background: radial-gradient(59.41% 52.44% at 46.04% 47.71%, rgba(189, 0, 255, 0.13) 0%, rgba(189, 0, 255, 0.00) 100%), linear-gradient(91deg, rgba(217, 217, 217, 0.25) -5.03%, rgba(217, 217, 217, 0.00) -5.02%, rgba(217, 217, 217, 0.05) 27.86%, rgba(217, 217, 217, 0.04) 46.25%, rgba(217, 217, 217, 0.09) 89.31%, rgba(217, 217, 217, 0.00) 102%);
-
 }
 
-.sobre-esquerda {
+.sobre-mim .sobre-esquerda {
   display: flex;
   flex-direction: row;
   justify-content: center;
@@ -224,73 +193,70 @@ body {
   margin-left: 1rem;
 }
 
-.sobre-esquerda .foto {
-
+.sobre-mim .sobre-esquerda .foto {
   display: flex;
   align-items: center;
 }
 
-.foto img {
-  width: 23vw;
+.sobre-mim .foto img {
+  width: 21rem;
   transition: width 0.5s;
 }
 
-.foto img:hover {
-  width: 25vw;
+.sobre-mim .foto img:hover {
+  width: 23rem;
 }
 
-.sobre-esquerda .info {
-
+.sobre-mim .sobre-esquerda .info {
   font-family: Clash display;
   display: flex;
   flex-direction: column;
   justify-content: center;
   width: 40%;
   line-height: 90%;
-  font-size: 15px;
+  font-size: 1rem;
   font-weight: 300;
   gap: 3.5rem;
 }
 
-.sobre-esquerda .info .design {
+.sobre-mim .sobre-esquerda .info .design {
   color: #fff;
 }
 
-.design .quatroAnos {
+.sobre-mim .design .quatroAnos {
   background: linear-gradient(271deg, #BD00FF 23.52%, #0057FF 143.29%);
   background-clip: text;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   font-family: Clash Display;
   font-style: normal;
-  font-size: 32px;
+  font-size: 2rem;
   font-weight: 600;
 }
 
-.sobre-esquerda .info .programacao {
-
+.sobre-mim .sobre-esquerda .info .programacao {
   color: #fff;
 }
 
-.programacao .doisAnos {
+.sobre-mim .programacao .doisAnos {
   background: linear-gradient(271deg, #BD00FF 23.52%, #0057FF 143.29%);
   background-clip: text;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   font-family: Clash Display;
   font-style: normal;
-  font-size: 32px;
+  font-size: 2rem;
 
   font-weight: 600;
 }
 
-.sobre-divisao {
+.sobre-mim .sobre-divisao {
   display: flex;
   align-items: center;
   width: 4%;
 }
 
-.sobre-direita {
+.sobre-mim .sobre-direita {
   width: 48%;
   display: flex;
   justify-content: center;
@@ -299,7 +265,8 @@ body {
   font-family: clash display;
 }
 
-.sobre-direita .texto {
+.sobre-mim .sobre-direita .texto {
+
   padding-bottom: 5rem;
   margin: 10%;
   display: flex;
@@ -307,35 +274,36 @@ body {
   font-weight: 200;
 }
 
-.ola {
-  background: linear-gradient(271deg, #BD00FF 23.52%, #0057FF 143.29%);
+.sobre-mim .sobre-direita .texto p {
+  margin: 1rem 0;
+}
+
+.sobre-mim .ola {
+  background: linear-gradient(270deg, #BD00FF 90%, #0057FF 110%);
   background-clip: text;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   font-family: Clash Display;
   font-style: normal;
-  font-size: 40px;
+  font-size: 3rem;
   font-weight: 600;
 }
 
-.sobre-div {
+.sobre-mim .sobre-div {
   background: linear-gradient(180deg, #400057 0%, #0057FF 100%);
   width: 4px;
   height: 80%;
   border-radius: 15px;
   border: none;
-  transition: height 0.2s;
 }
 
 /*---------------------------------sessão "o que eu faço?"-------------------------------*/
 
 .oQueFaco {
   background: radial-gradient(47.11% 47.09% at 38.05% 52.91%, rgba(189, 0, 255, 0.20) 0%, rgba(0, 0, 0, 0.00) 100%), linear-gradient(91deg, rgba(217, 217, 217, 0.15) -5.03%, rgba(217, 217, 217, 0.00) -5.02%, rgba(217, 217, 217, 0.03) 27.86%, rgba(217, 217, 217, 0.02) 46.25%, rgba(217, 217, 217, 0.05) 89.31%, rgba(217, 217, 217, 0.00) 102%);
-
   display: flex;
   flex-direction: column;
   align-items: center;
-  gap: 0rem;
   font-family: clash display;
 }
 
@@ -351,7 +319,7 @@ body {
   background-clip: text;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
-  font-size: 50px;
+  font-size: 3rem;
   font-weight: 600;
   margin: 5rem 2rem;
 }
@@ -372,48 +340,39 @@ body {
   color: #ffffff;
 }
 
-.caixas {
+.oQueFaco .caixas {
   display: flex;
   align-items: center;
   flex-direction: column;
   gap: 1rem;
-  margin: 10vw 0;
+  margin: 10rem 0;
 }
 
-.caixas .caixa {
+.oQueFaco .caixas .caixa {
   display: flex;
   flex-direction: row;
   align-items: center;
   border-radius: 19px;
   background: rgba(217, 217, 217, 0.05);
   width: 80vw;
-  height: 14vw;
+  height: 14rem;
   transition: width 0.3s, background 0.2s;
 }
 
-.caixa:hover {
-  width: 98vw;
+.oQueFaco .caixa:hover {
+  width: 98.5vw;
   background: linear-gradient(120deg, #BD00FF 20%, #0057FF 90.4%);
 }
 
-.caixa:hover hr {
-  background: #161616;
-}
-
-.caixa:hover .botao button {
+.oQueFaco .caixa:hover .botao button {
   background: #ffffff;
   color: #000;
   font-weight: 600;
   cursor: pointer;
 }
 
-.caixa:hover .projeto {
-  display: block;
-  width: 20vw;
-  height: 20vw;
-}
 
-.caixas hr {
+.oQueFaco .caixas hr {
   background: linear-gradient(96deg, #0057FF -29.23%, #BD00FF 90.4%);
   border: none;
   width: 0.8rem;
@@ -423,36 +382,47 @@ body {
   transition: background 1s;
 }
 
-.caixas .texto {
+.oQueFaco .caixa:hover hr {
+  background: #161616;
+}
+
+.oQueFaco .caixas .texto {
   color: #fff;
   display: flex;
   flex-direction: column;
   font-weight: 100;
   color: #ffffff;
-  font-size: 13px;
-  letter-spacing: 0.2px;
-  margin: 1rem 0rem;
-  width: 100vw;
-  gap: 0.7rem;
+  font-size: 12px;
+  letter-spacing: 0.5px;
+  margin: 5px 0;
+  width: 70rem;
+  gap: 0.9rem;
 }
 
-.caixas .texto .titulo {
+.oQueFaco .caixas .texto .titulo {
   font-weight: 500;
-  font-size: 20px;
+  font-size: 1.2rem;
   color: #fff;
 }
 
-.caixa .projeto {
+.oQueFaco .caixa .projeto {
   display: block;
-  width: 10vw;
-  height: 0vw;
+  width: 10rem;
+  height: 0rem;
   border-radius: 10px;
   transition: width 0.5s, height 0.5s;
   margin: 0 1rem;
   border: none;
 }
 
-.caixas .botao {
+.oQueFaco .caixa:hover .projeto {
+  display: flex;
+  align-items: center;
+  width: 15rem;
+  height: 20rem;
+}
+
+.oQueFaco .caixas .botao {
   display: flex;
   flex-direction: column;
   align-items: flex-end;
@@ -460,7 +430,7 @@ body {
   width: 30rem;
 }
 
-.caixas .botao button {
+.oQueFaco .caixas .botao button {
   font-size: 20px;
   padding: 0 2rem;
   font-weight: 500;
@@ -472,92 +442,16 @@ body {
   transition: padding 0.2s;
 }
 
-.caixas .botao button:hover {
+.oQueFaco .caixas .botao button:hover {
   padding: 0.5rem 2rem;
 }
 
-/*---------------------------------sessão "conectar"-------------------------------*/
-
-.conectar {
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  background: #222;
-  height: 20vw;
-  font-family: Clash Display;
-}
-
-.conectar .frase {
-  background: linear-gradient(267deg, #c72eff 7.77%, #2d73ff 98.31%);
-  background-clip: text;
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  font-size: 22.277px;
-  font-style: normal;
-  font-weight: 400;
-  margin: 0 8vw;
-}
-
-.conectar-frase {
-  font-weight: 200;
-  letter-spacing: 0.2px;
-  display: flex;
-  flex-direction: column;
-}
-
-.conectar .icones img {
-  width: 2vw;
-  cursor: pointer;
-}
-
-.conectar .icones img:hover {
-  width: 3vw;
-}
-
-.conectar .forma {
-  display: flex;
-  margin: 0 0 0 8vw;
-  padding: 2vw;
-  align-items: center;
-  border-radius: 38px 38px 38px 3px;
-  background: linear-gradient(264deg, #BD00FF -2.38%, #0057FF 109.82%);
-}
-
-.conectar .forma .conectar-frase {
-  color: #fff;
-  line-height: 0.9vw;
-}
-
-.conectar .forma .conectar-frase span {
-  font-size: 20px;
-  font-weight: 500;
-}
-
-.conectar button {
-  border-radius: 11px;
-  background: #FFF;
-  border: none;
-  font-family: Clash Display;
-  font-size: 20px;
-  font-weight: 600;
-  padding: 1vw;
-  transition: padding 0.2s;
-  cursor: pointer;
-}
-
-.conectar .contate {
-  margin: 0 0 0 5vw;
-}
-
-.conectar button:hover {
-  padding: 1vw 2vw;
-}
 
 /*---------------------------------sessão "habilidades"-------------------------------*/
 
 
 .habilidades {
-  height: 60vw;
+  height: 55rem;
   font-family: Clash Display;
   background: radial-gradient(50% 50% at 50% 50%, rgba(64, 0, 87, 0.69) 0%, rgba(19, 19, 21, 0.00) 100%);
 }
@@ -578,12 +472,12 @@ body {
   text-align: center;
   color: #6A6A6A;
   font-weight: 300;
-  width: 60vw;
-  gap: 1vw;
+  width: 60rem;
+  gap: 1rem;
 }
 
 .habilidades .texto {
-  margin: 5vw 0;
+  margin: 5rem 0;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -593,16 +487,15 @@ body {
   display: flex;
   flex-direction: column;
   align-items: center;
-  gap: 2vw;
-  margin: 5vw 0;
+  gap: 1rem;
+  margin: 5rem 0;
 }
 
 .habilidades .part-item {
   border-radius: 10px;
   background: rgba(217, 217, 217, 0.15);
-  width: 27vw;
-  height: 6vw;
-  flex-shrink: 0;
+  width: 26rem;
+  height: 6rem;
   display: flex;
   align-items: center;
 }
@@ -617,8 +510,8 @@ body {
 }
 
 .habilidades .icon {
-  width: 3vw;
-  margin: 1.5vw;
+  width: 2.7rem;
+  margin: 1.5rem;
 }
 
 .habilidades .items .part1 {
@@ -649,18 +542,105 @@ body {
 }
 
 .habilidades .voltar-inicio button {
-  font-size: 1.2vw;
-  padding: 1vw;
+  font-size: 1rem;
+  padding: 1rem 1.5rem;
   font-weight: 400;
   color: #fff;
   font-family: clash display;
   border: none;
-  border-radius: 15px;
+  border-radius: 1rem;
   background: linear-gradient(262deg, #BD00FF 0%, #0057FF 100%);
   cursor: pointer;
-  transition: padding 0.2s;
+  transition: padding 0.2s, font-size 0.2s;
 }
 
 .habilidades .voltar-inicio button:hover {
-  padding: 1vw 2vw;
+  padding: 1rem 2rem;
+  font-size: 15px;
+}
+
+/*---------------------------------sessão "conectar"-------------------------------*/
+
+.conectar {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  background: #222;
+  height: 20rem;
+  font-family: Clash Display;
+  justify-content: center;
+  gap: 8rem;
+}
+
+.conectar .frase {
+  background: linear-gradient(267deg, #c72eff 7.77%, #2d73ff 98.31%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-size: 22px;
+  font-style: normal;
+  font-weight: 400;
+}
+
+.conectar .conectar-frase {
+  font-weight: 200;
+  letter-spacing: 0.2px;
+  display: flex;
+  flex-direction: column;
+}
+
+.conectar .icones {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 1rem;
+}
+
+.conectar .icones img {
+  width: 2rem;
+  cursor: pointer;
+  transition: transform 0.2s;
+}
+
+.conectar .icones img:hover {
+  transform: scale(1.4);
+}
+
+.conectar .forma {
+  display: flex;
+  padding: 2rem;
+  align-items: center;
+  border-radius: 38px 38px 38px 3px;
+  background: linear-gradient(264deg, #BD00FF -2.38%, #0057FF 109.82%);
+}
+
+.conectar .forma .conectar-frase {
+  color: #fff;
+  line-height: 0.9rem;
+}
+
+.conectar .forma .conectar-frase span {
+  font-size: 20px;
+  font-weight: 500;
+}
+
+.conectar button {
+  border-radius: 11px;
+  background: #FFF;
+  border: none;
+  font-family: Clash Display;
+  font-size: 20px;
+  font-weight: 600;
+  padding: 1rem;
+  cursor: pointer;
+  transition: padding 0.2s, font-size 0.2s;
+}
+
+.conectar .contate {
+  margin: 0 0 0 5rem;
+}
+
+.conectar button:hover {
+  font-size: 17px;
+  padding: 1rem 2rem;
 }
