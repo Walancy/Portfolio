@@ -1,3 +1,8 @@
+@font-face {
+  font-family: ClashDisplay;
+  src: url(../../../public/ClashDisplay-Variable.ttf);
+}
+
 .headerSpace {
   height: 4rem;
 }
