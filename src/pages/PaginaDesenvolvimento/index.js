@@ -1,8 +1,10 @@
+import { useNavigate } from 'react-router-dom';
 import "./style.css";
 import { Header } from "../../components/Header/header";
-import { Link } from "react-router-dom";
 
 export const PaginaDesenvolvimento = () => {
+  const navigate = useNavigate();
+
   return (
     <div>
       <section id="inicioHeader" className="header">
@@ -17,9 +19,7 @@ export const PaginaDesenvolvimento = () => {
             Esta pagina está em desenvolvimento!
           </p>
         </div>
-        <Link to="/"> {}
-          <button>Voltar ao Inicio</button>
-        </Link>
+        <button onClick={() => navigate('/')}>Voltar ao Inicio</button>
       </section>
     </div>
   );

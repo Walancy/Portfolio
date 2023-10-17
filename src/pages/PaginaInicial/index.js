@@ -27,7 +27,6 @@ import MotionGIF from "../../assets/motion.gif";
 
 import { Header } from "../../components/Header/header";
 
-
 export const PaginaInicial = () => {
   const IconeLink = ({ src, alt, link }) => (
     <a href={link} target="_blank" rel="noopener noreferrer">
@@ -36,24 +35,21 @@ export const PaginaInicial = () => {
   );
 
   useEffect(() => {
-    document
-      .getElementById("voltar-inicio")
-      .addEventListener("click", function () {
-        document
-          .getElementById("inicioHeader")
-          .scrollIntoView({ behavior: "smooth" });
-      });
-
-    return () => {
-      document
-        .getElementById("voltar-inicio")
-        .removeEventListener("click", function () {
-          document
-            .getElementById("inicioHeader")
-            .scrollIntoView({ behavior: "smooth" });
-        });
+    const voltarInicioButton = document.getElementById("voltar-inicio");
+    const inicioHeaderElement = document.getElementById("inicioHeader");
+  
+    if (voltarInicioButton && inicioHeaderElement) {
+      const scrollFunction = () => {
+        inicioHeaderElement.scrollIntoView({ behavior: "smooth" });
+      };
+  
+      voltarInicioButton.addEventListener("click", scrollFunction);
+  
+      return () => {
+        voltarInicioButton.removeEventListener("click", scrollFunction);
+      };
     }
-  });
+  }, []);
 
   const ativarDesativarHr = (id) => {
     const hrElements = document.querySelectorAll(".conteudo hr");
@@ -81,7 +77,6 @@ export const PaginaInicial = () => {
       </section>
       <section id="PageInicio" className="inicio">
         <div className="inicio-box">
-
           <div className="frase">
             <p>
               Olá, eu me chamo Walancy e sou <br></br>
@@ -201,32 +196,66 @@ export const PaginaInicial = () => {
       <section className="oQueFaco" id="oQueFaco">
         <div className="frases">
           <p className="titulo">O que eu faço?</p>
-          <p className="texto">Minha paixão reside em dar vida a conceitos através de experiências visuais que transcendem o comum. Uma fusão única de habilidades em código e sensibilidade estética me permite criar obras que não só são funcionais, mas também verdadeiramente envolventes.
-            <span>Cada projeto é uma oportunidade de contar uma história, de imergir em um universo de emoções e conexões. Trabalho incansavelmente para forjar um mundo digital que não apenas deslumbra com sua beleza, mas também impacta com sua eficiência.</span></p>
+          <p className="texto">
+            Minha paixão reside em dar vida a conceitos através de experiências
+            visuais que transcendem o comum. Uma fusão única de habilidades em
+            código e sensibilidade estética me permite criar obras que não só
+            são funcionais, mas também verdadeiramente envolventes.
+            <span>
+              Cada projeto é uma oportunidade de contar uma história, de imergir
+              em um universo de emoções e conexões. Trabalho incansavelmente
+              para forjar um mundo digital que não apenas deslumbra com sua
+              beleza, mas também impacta com sua eficiência.
+            </span>
+          </p>
         </div>
         <div className="caixas" id="caixas">
           <div className="caixa" id="dev-frontend">
             <hr className="forma"></hr>
             <div className="texto">
-              <span className="titulo">Dev. Front-end<br></br></span>
-              <span className="titulo-texto">Tenho experiência e habilidades no desenvolvimento da estrutura front-end de projetos, empregando diversas linguagens de programação, tais como HTML, CSS, JavaScript, React, entre outras. Além disso, estou apto a criar interfaces atraentes e funcionais, garantindo uma experiência de usuário intuitiva e envolvente.</span>
-              <span className="titulo-texto">Estou sempre atualizado com as melhores práticas e tendências do mercado, buscando proporcionar resultados de alta qualidade e desempenho para os projetos em que trabalho</span>
+              <span className="titulo">
+                Dev. Front-end<br></br>
+              </span>
+              <span className="titulo-texto">
+                Tenho experiência e habilidades no desenvolvimento da estrutura
+                front-end de projetos, empregando diversas linguagens de
+                programação, tais como HTML, CSS, JavaScript, React, entre
+                outras. Além disso, estou apto a criar interfaces atraentes e
+                funcionais, garantindo uma experiência de usuário intuitiva e
+                envolvente.
+              </span>
+              <span className="titulo-texto">
+                Estou sempre atualizado com as melhores práticas e tendências do
+                mercado, buscando proporcionar resultados de alta qualidade e
+                desempenho para os projetos em que trabalho
+              </span>
             </div>
             <img src={Web} alt="projeto" className="projeto" />
             <div className="botao">
-              <Link to="/desenvolvimento"> {}
-              <button>
-                <p>Ver projetos</p>
-              </button>
+              <Link to="/desenvolvimento">
+                {" "}
+                {}
+                <button>
+                  <p>Ver projetos</p>
+                </button>
               </Link>
             </div>
           </div>
           <div className="caixa" id="ux/ui">
             <hr className="forma"></hr>
             <div className="texto">
-              <span className="titulo">UX/UI Design.<br></br></span>
-              <span className="titulo-texto">Tenho expertise na construção de sites e protótipos, com foco primordial na usabilidade e na experiência do usuário. Através de uma abordagem centrada no usuário, desenvolvo interfaces intuitivas e funcionais, buscando proporcionar uma navegação fluida e agradável. Meu objetivo é criar plataformas que não apenas impressionem visualmente, mas também ofereçam uma experiência envolvente e satisfatória para os visitantes.</span>
-
+              <span className="titulo">
+                UX/UI Design.<br></br>
+              </span>
+              <span className="titulo-texto">
+                Tenho expertise na construção de sites e protótipos, com foco
+                primordial na usabilidade e na experiência do usuário. Através
+                de uma abordagem centrada no usuário, desenvolvo interfaces
+                intuitivas e funcionais, buscando proporcionar uma navegação
+                fluida e agradável. Meu objetivo é criar plataformas que não
+                apenas impressionem visualmente, mas também ofereçam uma
+                experiência envolvente e satisfatória para os visitantes.
+              </span>
             </div>
 
             <img src={UXart} alt="projeto" className="projeto" />
@@ -240,137 +269,225 @@ export const PaginaInicial = () => {
           <div className="caixa" id="Logotipo">
             <hr className="forma"></hr>
             <div className="texto">
-              <span className="titulo">Logotipo e identidade visual.<br></br></span>
-              <span className="titulo-texto">Sou especializado em conceber e implementar ideias que não apenas representam, mas também conferem uma identidade vibrante e distintiva aos projetos e empresas. Minha abordagem criativa visa não apenas criar designs, mas também contar histórias visuais que ressoam com o público-alvo. Cada projeto é uma oportunidade de dar forma e personalidade à marca, proporcionando uma presença marcante e duradoura no mercado.</span>
+              <span className="titulo">
+                Logotipo e identidade visual.<br></br>
+              </span>
+              <span className="titulo-texto">
+                Sou especializado em conceber e implementar ideias que não
+                apenas representam, mas também conferem uma identidade vibrante
+                e distintiva aos projetos e empresas. Minha abordagem criativa
+                visa não apenas criar designs, mas também contar histórias
+                visuais que ressoam com o público-alvo. Cada projeto é uma
+                oportunidade de dar forma e personalidade à marca,
+                proporcionando uma presença marcante e duradoura no mercado.
+              </span>
             </div>
             <img src={Logofolio} alt="projeto" className="projeto" />
 
             <div className="botao">
-            <Link to="/desenvolvimento"> {}
-              <button>
-                <p>Ver projetos</p>
-              </button>
-            </Link>
+              <Link to="/desenvolvimento">
+                {" "}
+                {}
+                <button>
+                  <p>Ver projetos</p>
+                </button>
+              </Link>
             </div>
           </div>
           <div className="caixa" id="SocialMedia">
             <hr className="forma"></hr>
             <div className="texto">
-              <span className="titulo">Social media.<br></br></span>
-              <span className="titulo-texto">Desenvolvo designs exclusivos e impactantes para redes sociais, proporcionando uma identidade única e envolvente para perfis online. Meu trabalho visa não apenas atrair a atenção, mas também criar uma experiência visual que realmente represente a essência e a mensagem de cada perfil. Utilizo técnicas e criatividade para dar vida às plataformas, garantindo uma presença online marcante e memorável.</span>
+              <span className="titulo">
+                Social media.<br></br>
+              </span>
+              <span className="titulo-texto">
+                Desenvolvo designs exclusivos e impactantes para redes sociais,
+                proporcionando uma identidade única e envolvente para perfis
+                online. Meu trabalho visa não apenas atrair a atenção, mas
+                também criar uma experiência visual que realmente represente a
+                essência e a mensagem de cada perfil. Utilizo técnicas e
+                criatividade para dar vida às plataformas, garantindo uma
+                presença online marcante e memorável.
+              </span>
             </div>
             <img src={SocialMedia} alt="projeto" className="projeto" />
 
             <div className="botao">
-              <Link to="/desenvolvimento"> {}
-              <button>
-                <p>Ver projetos</p>
-              </button>
+              <Link to="/desenvolvimento">
+                {" "}
+                {}
+                <button>
+                  <p>Ver projetos</p>
+                </button>
               </Link>
             </div>
           </div>
           <div className="caixa" id="MotionDesign">
             <hr className="forma"></hr>
             <div className="texto">
-              <span className="titulo">Motion Design.<br></br></span>
-              <span className="titulo-texto">Utilizo minha habilidade para infundir vida e movimento em imagens e textos, resultando na criação de vídeos, GIFs e animações que capturam imediatamente a atenção do espectador. Minha expertise reside em transformar conceitos estáticos em experiências visuais dinâmicas e envolventes. Cada projeto é uma oportunidade de criar conteúdos visuais memoráveis e impactantes, garantindo uma presença marcante e diferenciada.</span>
+              <span className="titulo">
+                Motion Design.<br></br>
+              </span>
+              <span className="titulo-texto">
+                Utilizo minha habilidade para infundir vida e movimento em
+                imagens e textos, resultando na criação de vídeos, GIFs e
+                animações que capturam imediatamente a atenção do espectador.
+                Minha expertise reside em transformar conceitos estáticos em
+                experiências visuais dinâmicas e envolventes. Cada projeto é uma
+                oportunidade de criar conteúdos visuais memoráveis e
+                impactantes, garantindo uma presença marcante e diferenciada.
+              </span>
             </div>
             <img src={MotionGIF} alt="projeto" className="projeto" />
 
             <div className="botao">
-              <Link to="/desenvolvimento"> {}
-              <button>
-                <p>Ver projetos</p>
-              </button>
+              <Link to="/desenvolvimento">
+                {" "}
+                {}
+                <button>
+                  <p>Ver projetos</p>
+                </button>
               </Link>
             </div>
           </div>
         </div>
-
       </section>
       <section className="habilidades">
         <div className="texto">
-          <p><span>Minhas habilidades<br></br></span>
-            Ao longo desses anos, tive o privilégio de mergulhar em diversos campos da tecnologia e do design, o que me proporcionou a chance de explorar uma ampla variedade de ferramentas e linguagens. Como resultado, adquiri conhecimento e experiência em áreas que vão desde o desenvolvimento de software até a criação visual, incluindo, mas não se limitando a, aquelas mencionadas a seguir.</p>
+          <p>
+            <span>
+              Minhas habilidades<br></br>
+            </span>
+            Ao longo desses anos, tive o privilégio de mergulhar em diversos
+            campos da tecnologia e do design, o que me proporcionou a chance de
+            explorar uma ampla variedade de ferramentas e linguagens. Como
+            resultado, adquiri conhecimento e experiência em áreas que vão desde
+            o desenvolvimento de software até a criação visual, incluindo, mas
+            não se limitando a, aquelas mencionadas a seguir.
+          </p>
         </div>
         <div className="items">
           <div className="part1">
             <div className="part-item">
               <div>
-                <img src={FigmaIcon} className="icon" />
+                <img src={FigmaIcon} className="icon" alt="FigmaIcon" />
               </div>
               <div>
-                <p><span>Figma<br></br></span>
-                  + de 3 anos de experiência.</p>
+                <p>
+                  <span>
+                    Figma<br></br>
+                  </span>
+                  + de 3 anos de experiência.
+                </p>
               </div>
             </div>
             <div className="part-item">
               <div>
-                <img src={ReactIcon} className="icon" />
+                <img src={ReactIcon} className="icon" alt="ReactIcon" />
               </div>
               <div>
-                <p><span>React<br></br></span>
-                  + de 2 anos de experiência.</p>
+                <p>
+                  <span>
+                    React<br></br>
+                  </span>
+                  + de 2 anos de experiência.
+                </p>
               </div>
             </div>
           </div>
           <div className="part2">
             <div className="part-item">
               <div>
-                <img src={PhotoshopIcon} className="icon" />
+                <img src={PhotoshopIcon} className="icon" alt="PhotoshopIcon" />
               </div>
               <div>
-                <p><span>Photoshop<br></br></span>
-                  + de 5 anos de experiência.</p>
+                <p>
+                  <span>
+                    Photoshop<br></br>
+                  </span>
+                  + de 5 anos de experiência.
+                </p>
               </div>
             </div>
             <div className="part-item">
               <div>
-                <img src={JavaScriptIcon} className="icon" />
+                <img
+                  src={JavaScriptIcon}
+                  className="icon"
+                  alt="JavaScriptIcon"
+                />
               </div>
               <div>
-                <p><span>JavaScript<br></br></span>
-                  + de 2 anos de experiência.</p>
+                <p>
+                  <span>
+                    JavaScript<br></br>
+                  </span>
+                  + de 2 anos de experiência.
+                </p>
               </div>
             </div>
           </div>
           <div className="part1">
             <div className="part-item">
               <div>
-                <img src={AfterEffectsIcon} className="icon" />
+                <img
+                  src={AfterEffectsIcon}
+                  className="icon"
+                  alt="AfterEffectsIcon"
+                />
               </div>
               <div>
-                <p><span>After Effects<br></br></span>
-                  + de 4 anos de experiência.</p>
+                <p>
+                  <span>
+                    After Effects<br></br>
+                  </span>
+                  + de 4 anos de experiência.
+                </p>
               </div>
             </div>
             <div className="part-item">
               <div>
-                <img src={CSSicon} className="icon" />
+                <img src={CSSicon} className="icon" alt="CSSicon" />
               </div>
               <div>
-                <p><span>CSS<br></br></span>
-                  + de 2 anos de experiência.</p>
+                <p>
+                  <span>
+                    CSS<br></br>
+                  </span>
+                  + de 2 anos de experiência.
+                </p>
               </div>
             </div>
           </div>
           <div className="part2">
             <div className="part-item">
               <div>
-                <img src={IllustratorIcon} className="icon" />
+                <img
+                  src={IllustratorIcon}
+                  className="icon"
+                  alt="IllustratorIcon"
+                />
               </div>
               <div>
-                <p><span>Illustrator<br></br></span>
-                  + de 1 ano de experiência.</p>
+                <p>
+                  <span>
+                    Illustrator<br></br>
+                  </span>
+                  + de 1 ano de experiência.
+                </p>
               </div>
             </div>
             <div className="part-item">
               <div>
-                <img src={HTMLicon} className="icon" />
+                <img src={HTMLicon} className="icon" alt="HTMLicon" />
               </div>
               <div>
-                <p><span>HTML<br></br></span>
-                  + de 2 anos de experiência.</p>
+                <p>
+                  <span>
+                    HTML<br></br>
+                  </span>
+                  + de 2 anos de experiência.
+                </p>
               </div>
             </div>
           </div>
@@ -383,15 +500,42 @@ export const PaginaInicial = () => {
       <section className="conectar">
         <p className="frase">Vamos nos conectar!</p>
         <div className="icones">
-          <IconeLink src={Linkedin} alt="icon" className="icon" link="https://www.linkedin.com/in/walancy-h-f-dos-santos-5aa472198/" />
-          <IconeLink src={Instagram} alt="icon" className="icon" link="https://www.instagram.com/sant.dsg/" />
-          <IconeLink src={GitHub} alt="icon" className="icon" link="https://github.com/Walancy" />
-          <IconeLink src={WhatsApp} alt="icon" className="icon" link="https://api.whatsapp.com/send/?phone=5544998043997" />
-          <IconeLink src={Behance} alt="icon" className="icon" link="https://www.behance.net/walancy_dsgn" />
+          <IconeLink
+            src={Linkedin}
+            alt="icon"
+            className="icon"
+            link="https://www.linkedin.com/in/walancy-h-f-dos-santos-5aa472198/"
+          />
+          <IconeLink
+            src={Instagram}
+            alt="icon"
+            className="icon"
+            link="https://www.instagram.com/sant.dsg/"
+          />
+          <IconeLink
+            src={GitHub}
+            alt="icon"
+            className="icon"
+            link="https://github.com/Walancy"
+          />
+          <IconeLink
+            src={WhatsApp}
+            alt="icon"
+            className="icon"
+            link="https://api.whatsapp.com/send/?phone=5544998043997"
+          />
+          <IconeLink
+            src={Behance}
+            alt="icon"
+            className="icon"
+            link="https://www.behance.net/walancy_dsgn"
+          />
         </div>
         <div className="forma">
           <div className="conectar-frase">
-            <span>Atenção.<br></br></span>
+            <span>
+              Atenção.<br></br>
+            </span>
             <br></br>Não perca mais tempo, fale comigo ainda<br></br>
             hoje e vamos desenvolver e aplicar sua ideia!
           </div>
@@ -406,7 +550,10 @@ export const PaginaInicial = () => {
         </div>
       </section>
       <section className="padding">
-        <a>© 2023 Walancy Heleonai Ferreira dos Santos. <span>Todos os direitos reservados.</span></a>
+        <p>
+          © 2023 Walancy Heleonai Ferreira dos Santos.{" "}
+          <span>Todos os direitos reservados.</span>
+        </p>
       </section>
     </div>
   );
