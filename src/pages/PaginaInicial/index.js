@@ -37,14 +37,14 @@ export const PaginaInicial = () => {
   useEffect(() => {
     const voltarInicioButton = document.getElementById("voltar-inicio");
     const inicioHeaderElement = document.getElementById("inicioHeader");
-  
+
     if (voltarInicioButton && inicioHeaderElement) {
       const scrollFunction = () => {
         inicioHeaderElement.scrollIntoView({ behavior: "smooth" });
       };
-  
+
       voltarInicioButton.addEventListener("click", scrollFunction);
-  
+
       return () => {
         voltarInicioButton.removeEventListener("click", scrollFunction);
       };
@@ -261,9 +261,11 @@ export const PaginaInicial = () => {
             <img src={UXart} alt="projeto" className="projeto" />
 
             <div className="botao">
-              <button>
-                <p>Ver projetos</p>
-              </button>
+              <Link to="/desenvolvimento">
+                <button>
+                  <p>Ver projetos</p>
+                </button>
+              </Link>
             </div>
           </div>
           <div className="caixa" id="Logotipo">
