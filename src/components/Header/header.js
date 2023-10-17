@@ -1,5 +1,6 @@
 import React, { useEffect } from "react";
 import "./header.css";
+import "./styles-responsive.css";
 import LogoHeader from "../../assets/logo.svg";
 
 export const Header = () => {

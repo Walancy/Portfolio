@@ -1,4 +1,5 @@
 import React, { useEffect } from "react";
+import { Link } from "react-router-dom";
 import "./style.css";
 import "./styles-responsive.css";
 
@@ -208,21 +209,23 @@ export const PaginaInicial = () => {
             <hr className="forma"></hr>
             <div className="texto">
               <span className="titulo">Dev. Front-end<br></br></span>
-              <span>Tenho experiência e habilidades no desenvolvimento da estrutura front-end de projetos, empregando diversas linguagens de programação, tais como HTML, CSS, JavaScript, React, entre outras. Além disso, estou apto a criar interfaces atraentes e funcionais, garantindo uma experiência de usuário intuitiva e envolvente.</span>
-              Estou sempre atualizado com as melhores práticas e tendências do mercado, buscando proporcionar resultados de alta qualidade e desempenho para os projetos em que trabalho
+              <span className="titulo-texto">Tenho experiência e habilidades no desenvolvimento da estrutura front-end de projetos, empregando diversas linguagens de programação, tais como HTML, CSS, JavaScript, React, entre outras. Além disso, estou apto a criar interfaces atraentes e funcionais, garantindo uma experiência de usuário intuitiva e envolvente.</span>
+              <span className="titulo-texto">Estou sempre atualizado com as melhores práticas e tendências do mercado, buscando proporcionar resultados de alta qualidade e desempenho para os projetos em que trabalho</span>
             </div>
             <img src={Web} alt="projeto" className="projeto" />
             <div className="botao">
+              <Link to="/desenvolvimento"> {}
               <button>
                 <p>Ver projetos</p>
               </button>
+              </Link>
             </div>
           </div>
           <div className="caixa" id="ux/ui">
             <hr className="forma"></hr>
             <div className="texto">
               <span className="titulo">UX/UI Design.<br></br></span>
-              <span>Tenho expertise na construção de sites e protótipos, com foco primordial na usabilidade e na experiência do usuário. Através de uma abordagem centrada no usuário, desenvolvo interfaces intuitivas e funcionais, buscando proporcionar uma navegação fluida e agradável. Meu objetivo é criar plataformas que não apenas impressionem visualmente, mas também ofereçam uma experiência envolvente e satisfatória para os visitantes.</span>
+              <span className="titulo-texto">Tenho expertise na construção de sites e protótipos, com foco primordial na usabilidade e na experiência do usuário. Através de uma abordagem centrada no usuário, desenvolvo interfaces intuitivas e funcionais, buscando proporcionar uma navegação fluida e agradável. Meu objetivo é criar plataformas que não apenas impressionem visualmente, mas também ofereçam uma experiência envolvente e satisfatória para os visitantes.</span>
 
             </div>
 
@@ -238,42 +241,48 @@ export const PaginaInicial = () => {
             <hr className="forma"></hr>
             <div className="texto">
               <span className="titulo">Logotipo e identidade visual.<br></br></span>
-              Sou especializado em conceber e implementar ideias que não apenas representam, mas também conferem uma identidade vibrante e distintiva aos projetos e empresas. Minha abordagem criativa visa não apenas criar designs, mas também contar histórias visuais que ressoam com o público-alvo. Cada projeto é uma oportunidade de dar forma e personalidade à marca, proporcionando uma presença marcante e duradoura no mercado.
+              <span className="titulo-texto">Sou especializado em conceber e implementar ideias que não apenas representam, mas também conferem uma identidade vibrante e distintiva aos projetos e empresas. Minha abordagem criativa visa não apenas criar designs, mas também contar histórias visuais que ressoam com o público-alvo. Cada projeto é uma oportunidade de dar forma e personalidade à marca, proporcionando uma presença marcante e duradoura no mercado.</span>
             </div>
             <img src={Logofolio} alt="projeto" className="projeto" />
 
             <div className="botao">
+            <Link to="/desenvolvimento"> {}
               <button>
                 <p>Ver projetos</p>
               </button>
+            </Link>
             </div>
           </div>
           <div className="caixa" id="SocialMedia">
             <hr className="forma"></hr>
             <div className="texto">
               <span className="titulo">Social media.<br></br></span>
-              Desenvolvo designs exclusivos e impactantes para redes sociais, proporcionando uma identidade única e envolvente para perfis online. Meu trabalho visa não apenas atrair a atenção, mas também criar uma experiência visual que realmente represente a essência e a mensagem de cada perfil. Utilizo técnicas e criatividade para dar vida às plataformas, garantindo uma presença online marcante e memorável.
+              <span className="titulo-texto">Desenvolvo designs exclusivos e impactantes para redes sociais, proporcionando uma identidade única e envolvente para perfis online. Meu trabalho visa não apenas atrair a atenção, mas também criar uma experiência visual que realmente represente a essência e a mensagem de cada perfil. Utilizo técnicas e criatividade para dar vida às plataformas, garantindo uma presença online marcante e memorável.</span>
             </div>
             <img src={SocialMedia} alt="projeto" className="projeto" />
 
             <div className="botao">
+              <Link to="/desenvolvimento"> {}
               <button>
                 <p>Ver projetos</p>
               </button>
+              </Link>
             </div>
           </div>
           <div className="caixa" id="MotionDesign">
             <hr className="forma"></hr>
             <div className="texto">
               <span className="titulo">Motion Design.<br></br></span>
-              Utilizo minha habilidade para infundir vida e movimento em imagens e textos, resultando na criação de vídeos, GIFs e animações que capturam imediatamente a atenção do espectador. Minha expertise reside em transformar conceitos estáticos em experiências visuais dinâmicas e envolventes. Cada projeto é uma oportunidade de criar conteúdos visuais memoráveis e impactantes, garantindo uma presença marcante e diferenciada.
+              <span className="titulo-texto">Utilizo minha habilidade para infundir vida e movimento em imagens e textos, resultando na criação de vídeos, GIFs e animações que capturam imediatamente a atenção do espectador. Minha expertise reside em transformar conceitos estáticos em experiências visuais dinâmicas e envolventes. Cada projeto é uma oportunidade de criar conteúdos visuais memoráveis e impactantes, garantindo uma presença marcante e diferenciada.</span>
             </div>
             <img src={MotionGIF} alt="projeto" className="projeto" />
 
             <div className="botao">
+              <Link to="/desenvolvimento"> {}
               <button>
                 <p>Ver projetos</p>
               </button>
+              </Link>
             </div>
           </div>
         </div>
