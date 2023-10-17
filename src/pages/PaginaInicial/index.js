@@ -182,7 +182,7 @@ export const PaginaInicial = () => {
         <div className="sobre-direita">
           <div className="texto">
             <p className="ola">Olá</p>
-            <p>
+            <p className="texto-sobre">
               eu me chamo Walancy, e sou a mente criativa por trás da Sant ART.
               Com mais de quatro anos de experiência na área de design e mais de
               2 anos como programador, minha jornada tem sido marcada por uma
@@ -222,7 +222,7 @@ export const PaginaInicial = () => {
             <hr className="forma"></hr>
             <div className="texto">
               <span className="titulo">UX/UI Design.<br></br></span>
-              Tenho expertise na construção de sites e protótipos, com foco primordial na usabilidade e na experiência do usuário. Através de uma abordagem centrada no usuário, desenvolvo interfaces intuitivas e funcionais, buscando proporcionar uma navegação fluida e agradável. Meu objetivo é criar plataformas que não apenas impressionem visualmente, mas também ofereçam uma experiência envolvente e satisfatória para os visitantes.
+              <span>Tenho expertise na construção de sites e protótipos, com foco primordial na usabilidade e na experiência do usuário. Através de uma abordagem centrada no usuário, desenvolvo interfaces intuitivas e funcionais, buscando proporcionar uma navegação fluida e agradável. Meu objetivo é criar plataformas que não apenas impressionem visualmente, mas também ofereçam uma experiência envolvente e satisfatória para os visitantes.</span>
 
             </div>
 
