@@ -1,0 +1,14 @@
+@font-face {
+    font-family: ClashDisplay;
+    src: url(../../../../public/ClashDisplay-Variable.ttf);
+  }
+
+.container{
+  display: flex;
+
+}
+
+.container .itens{
+  display: flex;
+  align-items: center;
+}

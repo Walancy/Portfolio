@@ -232,7 +232,7 @@ export const PaginaInicial = () => {
             </div>
             <img src={Web} alt="projeto" className="projeto" />
             <div className="botao">
-              <Link to="/desenvolvimento">
+              <Link to="/dev-front-end">
                 {" "}
                 {}
                 <button>
@@ -261,7 +261,7 @@ export const PaginaInicial = () => {
             <img src={UXart} alt="projeto" className="projeto" />
 
             <div className="botao">
-              <Link to="/desenvolvimento">
+              <Link to="/ux_ui">
                 <button>
                   <p>Ver projetos</p>
                 </button>
@@ -287,7 +287,7 @@ export const PaginaInicial = () => {
             <img src={Logofolio} alt="projeto" className="projeto" />
 
             <div className="botao">
-              <Link to="/desenvolvimento">
+              <Link to="/logo-idv">
                 {" "}
                 {}
                 <button>
@@ -315,7 +315,7 @@ export const PaginaInicial = () => {
             <img src={SocialMedia} alt="projeto" className="projeto" />
 
             <div className="botao">
-              <Link to="/desenvolvimento">
+              <Link to="/social-midia">
                 {" "}
                 {}
                 <button>
@@ -343,7 +343,7 @@ export const PaginaInicial = () => {
             <img src={MotionGIF} alt="projeto" className="projeto" />
 
             <div className="botao">
-              <Link to="/desenvolvimento">
+              <Link to="/motion-design">
                 {" "}
                 {}
                 <button>
