@@ -1,10 +1,10 @@
 import React, { useEffect } from "react";
+import { Link } from "react-router-dom";
 import "./header.css";
 import "./styles-responsive.css";
 import LogoHeader from "../../assets/logo.svg";
 
 export const Header = () => {
-
   useEffect(() => {
     document
       .getElementById("botaoSobreMim")
@@ -46,13 +46,11 @@ export const Header = () => {
   }, []);
 
   useEffect(() => {
-    document
-      .getElementById("logoSant")
-      .addEventListener("click", function () {
-        document
-          .getElementById("inicioHeader")
-          .scrollIntoView({ behavior: "smooth" });
-      });
+    document.getElementById("logoSant").addEventListener("click", function () {
+      document
+        .getElementById("inicioHeader")
+        .scrollIntoView({ behavior: "smooth" });
+    });
 
     return () => {
       document
@@ -69,9 +67,18 @@ export const Header = () => {
     <div className="headerSpace">
       <div className="Header">
         <div className="esquerda">
-          <div id="logoInicio" className="logo">
-            <img src={LogoHeader} alt="logo" id="logoSant" className="logoSant" />
-          </div>
+          <Link to="/">
+            {" "}
+            {}
+            <div id="logoInicio" className="logo">
+              <img
+                src={LogoHeader}
+                alt="logo"
+                id="logoSant"
+                className="logoSant"
+              />
+            </div>
+          </Link>
         </div>
         <div className="meio">
           <div className="botoes">

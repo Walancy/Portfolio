@@ -26,6 +26,7 @@ import SocialMedia from "../../assets/SocialMidia.svg";
 import MotionGIF from "../../assets/motion.gif";
 
 import { Header } from "../../components/Header/header";
+import { Padding } from "../../components/Padding";
 
 export const PaginaInicial = () => {
   const IconeLink = ({ src, alt, link }) => (
@@ -261,7 +262,7 @@ export const PaginaInicial = () => {
             <img src={UXart} alt="projeto" className="projeto" />
 
             <div className="botao">
-              <Link to="/ux_ui">
+              <Link to="/desenvolvimento">
                 <button>
                   <p>Ver projetos</p>
                 </button>
@@ -287,7 +288,7 @@ export const PaginaInicial = () => {
             <img src={Logofolio} alt="projeto" className="projeto" />
 
             <div className="botao">
-              <Link to="/logo-idv">
+              <Link to="/desenvolvimento">
                 {" "}
                 {}
                 <button>
@@ -315,7 +316,7 @@ export const PaginaInicial = () => {
             <img src={SocialMedia} alt="projeto" className="projeto" />
 
             <div className="botao">
-              <Link to="/social-midia">
+              <Link to="/desenvolvimento">
                 {" "}
                 {}
                 <button>
@@ -343,7 +344,7 @@ export const PaginaInicial = () => {
             <img src={MotionGIF} alt="projeto" className="projeto" />
 
             <div className="botao">
-              <Link to="/motion-design">
+              <Link to="/desenvolvimento">
                 {" "}
                 {}
                 <button>
@@ -551,12 +552,8 @@ export const PaginaInicial = () => {
           </a>
         </div>
       </section>
-      <section className="padding">
-        <p>
-          © 2023 Walancy Heleonai Ferreira dos Santos.{" "}
-          <span>Todos os direitos reservados.</span>
-        </p>
-      </section>
+
+      <Padding />
     </div>
   );
 };

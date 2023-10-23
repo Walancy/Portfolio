@@ -3,12 +3,221 @@
     src: url(../../../../public/ClashDisplay-Variable.ttf);
   }
 
-.container{
+  body{
+    font-family: ClashDisplay;
+  }
+
+  .div-devFrontEnd .frase{
   display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  text-align: center;
+  gap: 1vw;
+  margin: 5% 0 0 0;
+}
+
+.div-devFrontEnd .frase .titulo{
+  background: linear-gradient(271deg, #BD00FF 23.52%, #0057FF 143.29%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-size: 45px;
+  font-weight: 600;
+  margin: 0;
+}
+
+.div-devFrontEnd .frase .sub-titulo{
+  color: #8a8a8a;
+  width: 40vw;
+  margin: 0;
 
 }
 
-.container .itens{
+@keyframes rotacionarGradiente {
+  0% {
+    background-position: 0% 0%;
+  }
+  100% {
+    background-position: 100% 100%;
+  }
+}
+
+.div-devFrontEnd{
+  background: radial-gradient(50% 50% at 50% 50%, rgba(64, 0, 87, 0.42) 0%, rgba(19, 19, 21, 0.00) 100%);
+  animation: rotacionarGradiente 2s linear infinite alternate;
+  background-size: 200% 100%; /* Adicionando esta linha */
+}
+
+.div-devFrontEnd .container {
   display: flex;
   align-items: center;
+  justify-content: center;
+}
+
+
+.div-devFrontEnd .container .itens{
+  display: flex;
+  flex-direction: column;
+  margin: 4% 0 15% 0;
+}
+
+.div-devFrontEnd .container .itens .linha{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 1vw;
+  align-content: center;
+}
+
+
+/*////////////////////////////item1*/
+
+.div-devFrontEnd .container .itens .item1{
+  width: 10vw;
+  height: 15vw;
+  text-align: center;
+}
+
+.div-devFrontEnd .container .itens .item1 .text {
+  gap: 1px;
+  opacity: 0;
+  transition: opacity 0.3s, margin 0.3s;
+  margin: -20px 0 0 0;
+}
+
+.div-devFrontEnd .container .itens .item1:hover .text {
+  opacity: 1;
+  margin: 10px 0 0 0;
+}
+
+/*////////////////////////////item2*/
+
+
+.div-devFrontEnd .container .itens .item2{
+  width: 10vw;
+  height: 15vw;
+  text-align: center;
+}
+
+.div-devFrontEnd .container .itens .item2 .text {
+  gap: 1px;
+  opacity: 0;
+  transition: opacity 0.3s, margin 0.3s;
+  margin: -20px 0 0 0;
+}
+
+.div-devFrontEnd .container .itens .item2:hover .text {
+  opacity: 1;
+  margin: 10px 0 0 0;
+}
+
+/*////////////////////////////item3*/
+
+
+.div-devFrontEnd .container .itens .item3{
+  width: 10vw;
+  height: 15vw;
+  text-align: center;
+}
+
+.div-devFrontEnd .container .itens .item3 .text {
+  gap: 1px;
+  opacity: 0;
+  transition: opacity 0.3s, margin 0.3s;
+  margin: -20px 0 0 0;
+}
+
+.div-devFrontEnd .container .itens .item3:hover .text {
+  opacity: 1;
+  margin: 10px 0 0 0;
+}
+
+/*////////////////////////////item4*/
+
+
+.div-devFrontEnd .container .itens .item4{
+  width: 10vw;
+  height: 15vw;
+  text-align: center;
+}
+
+.div-devFrontEnd .container .itens .item4 .text {
+  gap: 1px;
+  opacity: 0;
+  transition: opacity 0.3s, margin 0.3s;
+  margin: -20px 0 0 0;
+}
+
+.div-devFrontEnd .container .itens .item4:hover .text {
+  opacity: 1;
+  margin: 10px 0 0 0;
+}
+
+/*////////////////////////////item5*/
+
+
+.div-devFrontEnd .container .itens .item5{
+  width: 10vw;
+  height: 15vw;
+  text-align: center;
+}
+
+.div-devFrontEnd .container .itens .item5 .text {
+  gap: 1px;
+  opacity: 0;
+  transition: opacity 0.3s, margin 0.3s;
+  margin: -20px 0 0 0;
+}
+
+.div-devFrontEnd .container .itens .item5:hover .text {
+  opacity: 1;
+  margin: 10px 0 0 0;
+}
+
+.div-devFrontEnd .container .itens .text .item-titulo{
+  font-size: 17px;
+  font-weight: 500;
+  color: #ffffff;
+}
+
+.div-devFrontEnd .container .itens .text .item-descricao{
+  font-size: 12px;
+  letter-spacing: 0.3px;
+  font-weight: 400;
+  color: #646464;
+  margin: 10px 0 0 0;
+}
+
+.div-devFrontEnd .container .itens img{
+  width: 10vw;
+  height: 15vw;
+  transition: transform 0.3s, margin 0.3s;
+  border-radius: 10px;
+  background: #000000;
+  margin: 0 0 10px 0;
+  cursor: pointer;
+}
+
+.div-devFrontEnd .container .itens img:hover{
+  transform: scale(1.1);
+  transition: 0.3s;
+  margin: 0 0 30px 0;
+}
+
+.div-devFrontEnd .container .itens hr{
+  width: 10vw;
+  border: none;
+  height: 15vw;
+  transition: transform 0.3s, margin 0.3s;
+  border-radius: 10px;
+  background: #000000;
+  margin: 0 0 10px 0;
+  cursor: pointer;
+}
+
+.div-devFrontEnd .container .itens hr:hover{
+  transform: scale(1.1);
+  transition: 0.3s;
+  margin: 0 0 30px 0;
 }
