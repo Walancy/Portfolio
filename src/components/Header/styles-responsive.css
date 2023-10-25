@@ -1,19 +1,5 @@
-@media screen and (max-width: 600px){
+@media screen and (max-width: 850px){
     .Header{
-        background: #ffffff00;
-        
-        justify-content: center;
-    }
-
-    .header .esquerda{
-        margin: 0;
-    }
-    
-    .header .meio{
-        display: none;
-    }   
-
-    .header .direita{
         display: none;
     }
 }

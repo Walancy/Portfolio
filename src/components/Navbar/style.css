@@ -1,0 +1,52 @@
+.navegacao{
+    display: none;
+}
+
+@media screen and (max-width: 850px) {
+.navegacao {
+    min-height: 60px; /* Ajuste conforme a altura desejada */
+    margin: 0 1vw;
+    display: flex;
+    justify-content: center;
+}
+
+.navegacao .botoes{
+    bottom: 6vw;
+    position: fixed;
+    display: flex;
+    border-radius: 4.0625rem;
+    border: 1px solid rgba(255, 255, 255, 0.19);
+    background: rgba(0, 0, 0, 0.69);
+    padding: 0 2vw;
+}
+
+.navegacao .botoes .botoes-esquerda{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 4vw;
+    flex-direction: row;
+    gap: 7vw;
+}
+
+.navegacao .botoes .meio{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+    border-radius: 7vw;
+    border: 1px solid rgba(255, 255, 255, 0.418);
+    background: linear-gradient(248deg, #0057FF 5.34%, #BD00FF 94.45%);
+    padding: 3vw 4vw;
+}
+
+.navegacao .botoes .botoes-direita{
+    margin: 0 4vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+    gap: 7vw;
+}
+
+}

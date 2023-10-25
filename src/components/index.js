@@ -1,3 +1,3 @@
 export { Header } from "./Header/header";
-export { DropdownItens } from "./DropdownItens/dropdownItens";
-export { Portfolio } from "./Portfolio/portfolio";
+export { Padding } from "./Padding/index";
+export { Navbar } from "./Navbar/index";

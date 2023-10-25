@@ -14,4 +14,21 @@
   .padding span {
     font-weight: 500;
   }
-  
+  @media screen and (max-width: 550px){
+    .padding {
+      background: linear-gradient(265deg, #0057FF -12.39%, #BD00FF 103.02%);
+      height: 3rem;
+      color: #FFF;
+      font-size: 3vw;
+      display: flex;
+      font-weight: 200;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      font-family: ClashDisplay;
+    }
+    
+    .padding span {
+      font-weight: 500;
+    }
+  }

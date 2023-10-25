@@ -27,6 +27,7 @@ import MotionGIF from "../../assets/motion.gif";
 
 import { Header } from "../../components/Header/header";
 import { Padding } from "../../components/Padding";
+import { Navbar } from "../../components/Navbar";
 
 export const PaginaInicial = () => {
   const IconeLink = ({ src, alt, link }) => (
@@ -75,13 +76,17 @@ export const PaginaInicial = () => {
     <div>
       <section id="inicioHeader" className="header">
         <Header />
+        <Navbar />
       </section>
       <section id="PageInicio" className="inicio">
         <div className="inicio-box">
+          <div className="imagem">
+            <img src={Perfil} alt="Perfil" className="foto" />
+          </div>
           <div className="frase">
             <p>
               Olá, eu me chamo Walancy e sou <br></br>
-              <span className="gradiente-frase">designer e programador.</span>
+              <span className="gradiente-frase">Programador e Designer.</span>
               <hr className="separador" />
             </p>
           </div>
