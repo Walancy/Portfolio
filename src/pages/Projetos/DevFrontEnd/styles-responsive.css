@@ -1,0 +1,118 @@
+@media screen and (max-width: 550px) {
+
+
+    .div-devFrontEnd .frase .titulo {
+        font-size: 8vw;
+    }
+
+
+    .div-devFrontEnd .frase .sub-titulo {
+        color: #8a8a8a;
+        width: 80vw;
+        font-size: 4vw;
+    }
+
+    /*////////////////////////////item1*/
+
+    .div-devFrontEnd .container .itens .item1 {
+        width: 10vw;
+        height: 15vw;
+        text-align: center;
+    }
+
+    .div-devFrontEnd .container .itens .item1 .text {
+        gap: 1px;
+        opacity: 0;
+        transition: opacity 0.3s, margin 0.3s;
+        margin: -20px 0 0 0;
+    }
+
+    .div-devFrontEnd .container .itens .item1:hover .text {
+        opacity: 1;
+        margin: 10px 0 0 0;
+    }
+
+    /*////////////////////////////item2*/
+
+
+    .div-devFrontEnd .container .itens .item2 {
+        width: 10vw;
+        height: 15vw;
+        text-align: center;
+    }
+
+    .div-devFrontEnd .container .itens .item2 .text {
+        gap: 1px;
+        opacity: 0;
+        transition: opacity 0.3s, margin 0.3s;
+        margin: -20px 0 0 0;
+    }
+
+    .div-devFrontEnd .container .itens .item2:hover .text {
+        opacity: 1;
+        margin: 10px 0 0 0;
+    }
+
+    /*////////////////////////////item3*/
+
+
+    .div-devFrontEnd .container .itens .item3 {
+        width: 10vw;
+        height: 15vw;
+        text-align: center;
+    }
+
+    .div-devFrontEnd .container .itens .item3 .text {
+        gap: 1px;
+        opacity: 0;
+        transition: opacity 0.3s, margin 0.3s;
+        margin: -20px 0 0 0;
+    }
+
+    .div-devFrontEnd .container .itens .item3:hover .text {
+        opacity: 1;
+        margin: 10px 0 0 0;
+    }
+
+    /*////////////////////////////item4*/
+
+
+    .div-devFrontEnd .container .itens .item4 {
+        width: 10vw;
+        height: 15vw;
+        text-align: center;
+    }
+
+    .div-devFrontEnd .container .itens .item4 .text {
+        gap: 1px;
+        opacity: 0;
+        transition: opacity 0.3s, margin 0.3s;
+        margin: -20px 0 0 0;
+    }
+
+    .div-devFrontEnd .container .itens .item4:hover .text {
+        opacity: 1;
+        margin: 10px 0 0 0;
+    }
+
+    /*////////////////////////////item5*/
+
+
+    .div-devFrontEnd .container .itens .item5 {
+        width: 10vw;
+        height: 15vw;
+        text-align: center;
+    }
+
+    .div-devFrontEnd .container .itens .item5 .text {
+        gap: 1px;
+        opacity: 0;
+        transition: opacity 0.3s, margin 0.3s;
+        margin: -20px 0 0 0;
+    }
+
+    .div-devFrontEnd .container .itens .item5:hover .text {
+        opacity: 1;
+        margin: 10px 0 0 0;
+    }
+}

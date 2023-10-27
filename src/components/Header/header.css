@@ -3,6 +3,13 @@
   src: url(../../../public/ClashDisplay-Variable.ttf);
 }
 
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap');
+
+body {
+  font-family: 'Poppins', sans-serif;
+}
+
+
 .headerSpace {
   height: 4rem;
 }
@@ -68,7 +75,7 @@
 }
 
 .portfolio-menu {
-  font-family: poppins;
+  font-family: Poppins;
   position: absolute;
   display: none;
   border-top: 2.4rem;
@@ -127,7 +134,7 @@
 
 
 .contato-menu {
-  font-family: poppins;
+  font-family: Poppins;
   position: absolute;
   display: none;
   border-top: 2.4rem;

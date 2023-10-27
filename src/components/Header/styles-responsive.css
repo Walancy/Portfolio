@@ -1,5 +1,7 @@
-@media screen and (max-width: 850px){
-    .Header{
+@media screen and (max-width: 850px) {
+    .Header {
         display: none;
     }
+
+
 }

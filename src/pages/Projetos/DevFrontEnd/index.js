@@ -1,5 +1,7 @@
 import { Header } from "../../../components/Header/header";
 import "./style.css";
+import "./styles-responsive.css";
+
 
 import Portfolio from "../../../assets/projetos/Portfólio.svg";
 import emBreve01 from "../../../assets/projetos/emBreve01.svg";
@@ -23,7 +25,7 @@ export const DevFrontEnd = () => {
       <section className="container">
         <div className="itens">
           <div className="linha" id="linha1">
-          <div className="item1">
+            <div className="item1">
               <a
                 href="https://github.com/Walancy/Portifolio"
                 target="_blank"
@@ -50,7 +52,7 @@ export const DevFrontEnd = () => {
 
               </a>
               <div className="text">
-              <p className="item-titulo">Em breve...</p>
+                <p className="item-titulo">Em breve...</p>
                 <p className="item-descricao">
                   Um novo projeto totalmente diferente e inovador, em breve...
                 </p>
@@ -66,7 +68,7 @@ export const DevFrontEnd = () => {
 
               </a>
               <div className="text">
-              <p className="item-titulo">Em breve...</p>
+                <p className="item-titulo">Em breve...</p>
                 <p className="item-descricao">
                   Um novo projeto totalmente diferente e inovador, em breve...
                 </p>
@@ -82,7 +84,7 @@ export const DevFrontEnd = () => {
 
               </a>
               <div className="text">
-              <p className="item-titulo">Em breve...</p>
+                <p className="item-titulo">Em breve...</p>
                 <p className="item-descricao">
                   Um novo projeto totalmente diferente e inovador, em breve...
                 </p>
@@ -98,7 +100,7 @@ export const DevFrontEnd = () => {
 
               </a>
               <div className="text">
-              <p className="item-titulo">Em breve...</p>
+                <p className="item-titulo">Em breve...</p>
                 <p className="item-descricao">
                   Um novo projeto totalmente diferente e inovador, em breve...
                 </p>

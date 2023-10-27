@@ -238,9 +238,9 @@ export const PaginaInicial = () => {
             </div>
             <img src={Web} alt="projeto" className="projeto" />
             <div className="botao">
-              <Link to="/dev-front-end">
+              <Link to="/desenvolvimento">
                 {" "}
-                {}
+                { }
                 <button>
                   <p>Ver projetos</p>
                 </button>
@@ -295,7 +295,7 @@ export const PaginaInicial = () => {
             <div className="botao">
               <Link to="/desenvolvimento">
                 {" "}
-                {}
+                { }
                 <button>
                   <p>Ver projetos</p>
                 </button>
@@ -323,7 +323,7 @@ export const PaginaInicial = () => {
             <div className="botao">
               <Link to="/desenvolvimento">
                 {" "}
-                {}
+                { }
                 <button>
                   <p>Ver projetos</p>
                 </button>
@@ -351,7 +351,7 @@ export const PaginaInicial = () => {
             <div className="botao">
               <Link to="/desenvolvimento">
                 {" "}
-                {}
+                { }
                 <button>
                   <p>Ver projetos</p>
                 </button>
