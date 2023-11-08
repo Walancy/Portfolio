@@ -15,25 +15,22 @@ export const Navbar = () => {
     </a>
   );
 
-  useEffect(() => {
-    document
-      .getElementById("meio")
-      .addEventListener("click", function () {
-        document
-          .getElementById("PageInicio")
-          .scrollIntoView({ behavior: "smooth" });
-      });
+useEffect(() => {
+  const meioElement = document.getElementById("meio");
+  const inicioElement = document.getElementById("PageInicio");
+
+  if (meioElement && inicioElement) {
+    const handleClick = () => {
+      inicioElement.scrollIntoView({ behavior: "smooth" });
+    };
+
+    meioElement.addEventListener("click", handleClick);
 
     return () => {
-      document
-        .getElementById("meio")
-        .removeEventListener("click", function () {
-          document
-            .getElementById("PageInicio")
-            .scrollIntoView({ behavior: "smooth" });
-        });
+      meioElement.removeEventListener("click", handleClick);
     };
-  }, []);
+  }
+}, []);
 
   return (
     <div className="navegacao">

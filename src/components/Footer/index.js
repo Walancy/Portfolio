@@ -1,6 +1,6 @@
 import "./style.css";
 
-export const Padding = () => {
+export const Footer = () => {
   return (
     <section className="padding">
       <p>

@@ -26,7 +26,7 @@ import SocialMedia from "../../assets/SocialMidia.svg";
 import MotionGIF from "../../assets/motion.gif";
 
 import { Header } from "../../components/Header/header";
-import { Padding } from "../../components/Padding";
+import { Footer } from "../../components/Footer";
 import { Navbar } from "../../components/Navbar";
 
 export const PaginaInicial = () => {
@@ -36,21 +36,24 @@ export const PaginaInicial = () => {
     </a>
   );
 
+
   useEffect(() => {
     const voltarInicioButton = document.getElementById("voltar-inicio");
     const inicioHeaderElement = document.getElementById("inicioHeader");
 
+    const scrollFunction = () => {
+      inicioHeaderElement.scrollIntoView({ behavior: "smooth" });
+    };
+
     if (voltarInicioButton && inicioHeaderElement) {
-      const scrollFunction = () => {
-        inicioHeaderElement.scrollIntoView({ behavior: "smooth" });
-      };
-
       voltarInicioButton.addEventListener("click", scrollFunction);
-
-      return () => {
-        voltarInicioButton.removeEventListener("click", scrollFunction);
-      };
     }
+
+    return () => {
+      if (voltarInicioButton && inicioHeaderElement) {
+        voltarInicioButton.removeEventListener("click", scrollFunction);
+      }
+    };
   }, []);
 
   const ativarDesativarHr = (id) => {
@@ -239,8 +242,6 @@ export const PaginaInicial = () => {
             <img src={Web} alt="projeto" className="projeto" />
             <div className="botao">
               <Link to="/dev-front-end">
-                {" "}
-                {}
                 <button>
                   <p>Ver projetos</p>
                 </button>
@@ -294,8 +295,6 @@ export const PaginaInicial = () => {
 
             <div className="botao">
               <Link to="/desenvolvimento">
-                {" "}
-                {}
                 <button>
                   <p>Ver projetos</p>
                 </button>
@@ -322,8 +321,6 @@ export const PaginaInicial = () => {
 
             <div className="botao">
               <Link to="/desenvolvimento">
-                {" "}
-                {}
                 <button>
                   <p>Ver projetos</p>
                 </button>
@@ -350,8 +347,6 @@ export const PaginaInicial = () => {
 
             <div className="botao">
               <Link to="/desenvolvimento">
-                {" "}
-                {}
                 <button>
                   <p>Ver projetos</p>
                 </button>
@@ -558,7 +553,7 @@ export const PaginaInicial = () => {
         </div>
       </section>
 
-      <Padding />
+      <Footer />
     </div>
   );
 };

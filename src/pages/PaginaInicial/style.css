@@ -89,34 +89,6 @@ button:active{
   line-height: 90%;
 }
 
-@keyframes piscar {
-  0% {
-    opacity: 0;
-  }
-  100% {
-    opacity: 1;
-  }
-}
-
-.inicio .gradiente-frase::after {
-  content: '|';
-  display: inline-block;
-  animation: piscar 0.7s infinite alternate;
-}
-
-@keyframes digitando {
-  from{
-    width: 0;
-  }
-}
-
-@keyframes piscando {
-  50%{
-    border-color: transparent;
-  }
-}
-
-
 .inicio .gradiente-frase {
   background: linear-gradient(271deg, #BD00FF 23.52%, #0057FF 143.29%);
   background-clip: text;

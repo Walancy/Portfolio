@@ -6,44 +6,49 @@ import LogoHeader from "../../assets/logo.svg";
 
 export const Header = () => {
   useEffect(() => {
-    document
-      .getElementById("botaoSobreMim")
-      .addEventListener("click", function () {
-        document
-          .getElementById("sobreMim")
-          .scrollIntoView({ behavior: "smooth" });
-      });
-
-    return () => {
+    if (window.location.pathname === "/") {
       document
         .getElementById("botaoSobreMim")
-        .removeEventListener("click", function () {
+        .addEventListener("click", function () {
           document
             .getElementById("sobreMim")
             .scrollIntoView({ behavior: "smooth" });
         });
-    };
-  }, []);
-
-  useEffect(() => {
-    document
-      .getElementById("botaoProjetos")
-      .addEventListener("click", function () {
+  
+      return () => {
         document
-          .getElementById("oQueFaco")
-          .scrollIntoView({ behavior: "smooth" });
-      });
-
-    return () => {
+          .getElementById("botaoSobreMim")
+          .removeEventListener("click", function () {
+            document
+              .getElementById("sobreMim")
+              .scrollIntoView({ behavior: "smooth" });
+          });
+      };
+    }
+  }, []);
+  
+  useEffect(() => {
+    if (window.location.pathname === "/") {
       document
         .getElementById("botaoProjetos")
-        .removeEventListener("click", function () {
+        .addEventListener("click", function () {
           document
             .getElementById("oQueFaco")
             .scrollIntoView({ behavior: "smooth" });
         });
-    };
+  
+      return () => {
+        document
+          .getElementById("botaoProjetos")
+          .removeEventListener("click", function () {
+            document
+              .getElementById("oQueFaco")
+              .scrollIntoView({ behavior: "smooth" });
+          });
+      };
+    }
   }, []);
+  
 
   useEffect(() => {
     document.getElementById("logoSant").addEventListener("click", function () {
@@ -83,17 +88,21 @@ export const Header = () => {
         <div className="meio">
           <div className="botoes">
             <div className="sobre">
-              <button id="botaoSobreMim" className="botao-sobre">
-                Sobre mim
-              </button>
+              <Link to={"/"}>
+                <button id="botaoSobreMim" className="botao-sobre">
+                  Sobre mim
+                </button>
+              </Link>
             </div>
             <div className="sobre">
-              <button id="botaoProjetos" className="botao-sobre">
-                Projetos
-              </button>
+              <Link to={"/"}>
+                <button id="botaoProjetos" className="botao-sobre">
+                  Projetos
+                </button>
+              </Link>
             </div>
             <div className="portfolioDropdown">
-              <button>Portfólios</button>
+              <button className="botao-portfolio">Portfólios</button>
               <div className="portfolio-menu">
                 <div className="portfolio-botoes">
                   <a
@@ -124,7 +133,7 @@ export const Header = () => {
               </div>
             </div>
             <div className="contatoDropdown">
-              <button>Contatos</button>
+              <button className="botao-contatos">Contatos</button>
               <div className="contato-menu">
                 <div className="contato-botoes">
                   <a

@@ -1,3 +1,3 @@
 export { Header } from "./Header/header";
-export { Padding } from "./Padding/index";
+export { Footer } from "./Footer/index";
 export { Navbar } from "./Navbar/index";

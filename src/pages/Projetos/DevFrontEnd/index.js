@@ -1,4 +1,5 @@
 import { Header } from "../../../components/Header/header";
+import { Footer } from "../../../components/Footer/index";
 import "./style.css";
 
 import Portfolio from "../../../assets/projetos/Portfólio.svg";
@@ -107,6 +108,7 @@ export const DevFrontEnd = () => {
           </div>
         </div>
       </section>
+      <Footer/>
     </div>
   );
 };
