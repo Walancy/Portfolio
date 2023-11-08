@@ -1,24 +1,36 @@
 @media screen and (max-width: 550px) {
-    
+
+
+    @font-face {
+        font-family: ClashDisplay;
+        src: url(../../../public/ClashDisplay-Variable.ttf);
+    }
+
+    @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap');
+
+    body {
+        font-family: 'Poppins', sans-serif;
+    }
+
     .inicio {
         height: 200vw;
         display: flex;
         justify-content: flex-start;
     }
-    
+
     .inicio-box {
         display: flex;
         flex-direction: column;
         align-items: center;
     }
 
-    .inicio-box .imagem{
+    .inicio-box .imagem {
         display: flex;
         align-items: center;
         justify-content: center;
     }
 
-    .inicio-box .foto{
+    .inicio-box .foto {
         display: block;
         width: 50vw;
     }
@@ -36,7 +48,7 @@
         background-clip: text;
         -webkit-background-clip: text;
         -webkit-text-fill-color: transparent;
-        font-family: Clash Display;
+        font-family: ClashDisplay;
         font-style: normal;
         font-weight: 600;
     }
@@ -61,7 +73,7 @@
     .inicio .mensagem {
         color: #5A5A5A;
         text-align: center;
-        font-family: Clash Display;
+        font-family: ClashDisplay;
         font-size: 2.5vw;
         font-style: normal;
         font-weight: 500;
@@ -74,7 +86,7 @@
     .inicio .contato .botao {
         margin-top: 5vw;
         color: #fff;
-        font-family: Clash Display;
+        font-family: ClashDisplay;
         font-size: 5vw;
         letter-spacing: 0.3px;
         font-weight: 500;
@@ -96,7 +108,7 @@
 
     }
 
-    .inicio .contato .botao:active{
+    .inicio .contato .botao:active {
         transform: scale(1.1);
     }
 
@@ -111,7 +123,7 @@
     .inicio .softwaresUso {
         color: #5A5A5A;
         text-align: center;
-        font-family: Clash Display;
+        font-family: ClashDisplay;
         font-size: 3vw;
         font-style: normal;
         font-weight: 500;
@@ -138,446 +150,445 @@
         transform: scale(1.3);
     }
 
- /*---------------------------------sessão "sobre mim"-------------------------------*/
-
- .sobre-mim {
-    height: 190vw;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    background: radial-gradient(59.41% 52.44% at 46.04% 47.71%, rgba(189, 0, 255, 0.13) 0%, rgba(189, 0, 255, 0.00) 100%), linear-gradient(91deg, rgba(217, 217, 217, 0.25) -5.03%, rgba(217, 217, 217, 0.00) -5.02%, rgba(217, 217, 217, 0.05) 27.86%, rgba(217, 217, 217, 0.04) 46.25%, rgba(217, 217, 217, 0.09) 89.31%, rgba(217, 217, 217, 0.00) 102%);
-}
-
-.sobre-mim .sobre-esquerda {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-    width: 100vw;
-    gap: 5vw;
-    margin: 10vw 0;
-}
-
-.sobre-mim .sobre-esquerda .foto {
-    display: flex;
-    align-items: center;
-}
-
-.sobre-mim .foto img {
-    width: 40vw;
-    transition: width 0.5s;
-}
-
-.sobre-mim .foto img:hover {
-    width: 40vw;
-}
-
-.sobre-mim .sobre-esquerda .info {
-    font-family: Clash display;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    width: 40%;
-    line-height: 90%;
-    font-size: 2.5vw;
-    font-weight: 300;
-    letter-spacing: 0.5px;
-    gap: 8vw;
-}
-
-.sobre-mim .sobre-esquerda .info .design {
-    color: #fff;
-}
-
-.sobre-mim .design .quatroAnos {
-    background: linear-gradient(271deg, #BD00FF 23.52%, #0057FF 143.29%);
-    background-clip: text;
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    font-family: Clash Display;
-    font-style: normal;
-    font-size: 5vw;
-    font-weight: 600;
-}
-
-.sobre-mim .sobre-esquerda .info .programacao {
-    color: #fff;
-}
-
-.sobre-mim .programacao .doisAnos {
-    background: linear-gradient(271deg, #BD00FF 23.52%, #0057FF 143.29%);
-    background-clip: text;
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    font-family: Clash Display;
-    font-style: normal;
-    font-size: 5vw;
-
-    font-weight: 600;
-}
-
-.sobre-mim .sobre-divisao {
-    display: flex;
-    align-items: center;
-    width: 100%;
-}
-
-.sobre-mim .sobre-direita {
-    width: 100%;
-    display: flex;
-    text-align: center;
-    justify-content: center;
-    flex-direction: column;
-    color: #fff;
-    font-family: clash display;
-}
-
-.sobre-mim .sobre-direita .texto {
-
-    padding-bottom: 5vw;
-    margin: 10%;
-    display: flex;
-    flex-direction: column;
-    font-weight: 200;
-}
-
-.sobre-mim .sobre-direita .texto .texto-sobre {
-    margin: 1vw 0;
-    letter-spacing: .5px;
-    font-size: 3vw;
-}
-
-.sobre-mim .ola {
-    background: linear-gradient(270deg, #BD00FF 90%, #0057FF 110%);
-    background-clip: text;
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    font-family: Clash Display;
-    font-style: normal;
-    font-size: 8vw;
-    font-weight: 600;
-}
-
-.sobre-mim .sobre-div {
-    background: linear-gradient(100deg, #400057 0%, #0057FF 100%);
-    width: 80%;
-    height: 2px;
-    border-radius: 15px;
-    border: none;
-}
-
-/*---------------------------------sessão "o que eu faço?"-------------------------------*/
-
-.oQueFaco {
-  background: radial-gradient(47.11% 47.09% at 38.05% 52.91%, rgba(189, 0, 255, 0.20) 0%, rgba(0, 0, 0, 0.00) 100%);
-    height: 100%;
-    letter-spacing: 0.5px;
-}
-
-.oQueFaco .frases .titulo {
-    font-size: 8vw;
-    margin: 15vw 0 5vw 0;
-}
-
-.oQueFaco .frases .texto {
-    display: flex;
-    flex-direction: column;
-    align-content: center;
-    text-align: center;
-    font-size: 10px;
-    width: 60vw;
-    font-weight: 500;
-    color: #fff;
-    gap: 1rem;
-}
-
-.oQueFaco .frases .texto span {
-    font-weight: 100;
-    color: #ffffff;
-}
-
-.oQueFaco .caixas {
-    border-radius: 20px;
-    display: flex;
-    align-items: center;
-    flex-direction: row;
-    gap: 5vw;
-    margin: 20vw 0;
-    overflow-x: scroll;
-    scroll-snap-type:mandatory;
-    width: 85%;
-    scroll-behavior: smooth;
-    scroll-padding: 0 50%;
-    transition: transform 0.3s;
-}
-
-.oQueFaco .caixas .caixa {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    border-radius: 20px;
-    background: rgba(217, 217, 217, 0.05);
-    width: 20vw;
-    height: 110vw;
-    flex: 0 0 auto;
-    min-width: 300px;
-    scroll-snap-align: start;
-    justify-content: center;
-    transition: width 0.3s, background 0.2s;
-}
-
-.oQueFaco .caixa:hover {
-    width: 80vw;
-}
-
-.oQueFaco .caixa:hover .botao button {
-    background: linear-gradient(262deg, #BD00FF 0%, #0057FF 100%);
-
-    color: #ffffff;
-    font-weight: 500;
-    cursor: pointer;
-}
-
-
-.oQueFaco .caixas hr {
-    display: none;
-}
-
-.oQueFaco .caixas .texto {
-    color: #fff;
-    display: flex;
-    flex-direction: column;
-    font-weight: 100;
-    color: #ffffff;
-    font-size: 12px;
-    text-align:left;
-    letter-spacing: 0.5px;
-    margin: 5px 0;
-    width: 50vw;
-    gap: 0.9rem;
-}
-
-.oQueFaco .caixas .texto .titulo {
-    font-weight: 500;
-    font-size: 5vw;
-    color: #fff;
-}
-
-.oQueFaco .caixas .texto .titulo-texto{
-    display: flex;
-}
-
-.oQueFaco .caixa .projeto {
-    display: none;
-    width: 10rem;
-    height: 0rem;
-    border-radius: 10px;
-    transition: width 0.5s, height 0.5s;
-    margin: 0 1rem;
-    border: none;
-}
-
-.oQueFaco .caixa:hover .projeto {
-    display: none;
-    align-items: center;
-    width: 15rem;
-    height: 20rem;
-}
-
-.oQueFaco .caixas .botao {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    margin-right: 0;
-    width: 100%;
-}
-
-.oQueFaco .caixas .botao button {
-    margin: 5vw 0;
-    font-size: 15px;
-    height: 10vw;
-    padding: none;
-    font-weight: 500;
-    color: #fff;
-    font-family: clash display;
-    border: none;
-    border-radius: 15px;
-    background: linear-gradient(262deg, #BD00FF 0%, #0057FF 100%);
-    transition: padding 0.2s;
-}
-
-.oQueFaco .caixas .botao button:hover {
-    padding: none;
-}
-
-::-webkit-scrollbar {
-    display: none;
-  }
-
-/*---------------------------------sessão "habilidades"-------------------------------*/
-.habilidades {
-    height: 220vw;
-    font-family: Clash Display;
-    background: none;
-}
-
-.habilidades .texto span {
-    background: linear-gradient(267deg, #c72eff 7.77%, #2d73ff 98.31%);
-    background-clip: text;
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    font-weight: 600;
-    font-size: 7vw;
-}
-
-.habilidades .texto p {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    text-align: center;
-    color: #6A6A6A;
-    font-size: 10px;
-    font-weight: 300;
-    width: 70vw;
-    gap: 1rem;
-}
-
-.habilidades .texto {
-    margin: 5vw 0;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-
-.habilidades .items {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    margin: 10vw 0;
-}
-
-.habilidades .part-item {
-    border-radius: 10px;
-    background: rgba(217, 217, 217, 0.15);
-    width: 70vw;
-    height: 15vw;
-    display: flex;
-    align-items: center;
-    font-size: 3vw;
-    letter-spacing: 0.7px;
-}
-
-.habilidades .part-item span {
-    font-weight: 500;
-}
-
-.habilidades .icon {
-    width: 7vw;
-    margin: 3vw;
-}
-
-.habilidades .items .part1 {
-    display: flex;
-    flex-direction: column;
-    gap: 4vw;
-    transition: gap 0.2s;
-}
-
-.habilidades .items .part1:hover {
-    gap: 4vw;
-}
-
-.habilidades .items .part2:hover {
-    gap: 4vw;
-}
-
-.habilidades .items .part2 {
-    display: flex;
-    flex-direction: column;
-    gap: 4vw;
-}
-
-.habilidades .voltar-inicio {
-    display: none;
-}
-
-/*---------------------------------sessão "conectar" -------------------------------*/
-.conectar {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    height: 80vw;
-    font-family: Clash Display;
-    justify-content: center;
-    gap: 5vw;
-}
-
-.conectar .frase {
-    display: none;
-}
-
-.conectar .conectar-frase {
-    font-weight: 200;
-    letter-spacing: 0.2px;
-    display: flex;
-    flex-direction: column;
-    font-size: 10px;
-}
-
-.conectar .icones {
-    flex-direction: row;
-    align-items: center;
-    gap: 5vw;
-}
-
-.conectar .icones img {
-    width: 6vw;
-    cursor: pointer;
-    transition: transform 0.2s;
-}
-
-.conectar .icones img:hover {
-    transform: scale(1);
-}
-
-.conectar .forma {
-    display: flex;
-    flex-direction: column;
-    text-align: center;
-    gap: 5vw;
-    padding: 5vw;
-    align-items: center;
-    border-radius: 20px 20px 20px 3px;
-    background: linear-gradient(264deg, #BD00FF -2.38%, #0057FF 109.82%);
-}
-
-.conectar .forma .conectar-frase {
-    color: #fff;
-    line-height: 3vw;
-    align-items: center;
-}
-
-.conectar .forma .conectar-frase span {
-    font-size: 20px;
-    font-weight: 500;
-}
-
-.conectar button {
-    border-radius: 11px;
-    font-size: 15px;
-    font-weight: 600;
-    padding: 5vw;
-}
-
-.conectar .contate {
-    margin: 0 0 0 0;
-}
-
-.padding {
-    font-size: 8px;
-    height: 5vw;
-    letter-spacing: 0.5px;
-}
+    /*---------------------------------sessão "sobre mim"-------------------------------*/
+
+    .sobre-mim {
+        height: 190vw;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        background: radial-gradient(59.41% 52.44% at 46.04% 47.71%, rgba(189, 0, 255, 0.13) 0%, rgba(189, 0, 255, 0.00) 100%), linear-gradient(91deg, rgba(217, 217, 217, 0.25) -5.03%, rgba(217, 217, 217, 0.00) -5.02%, rgba(217, 217, 217, 0.05) 27.86%, rgba(217, 217, 217, 0.04) 46.25%, rgba(217, 217, 217, 0.09) 89.31%, rgba(217, 217, 217, 0.00) 102%);
+    }
+
+    .sobre-mim .sobre-esquerda {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        width: 100vw;
+        gap: 5vw;
+        margin: 10vw 0;
+    }
+
+    .sobre-mim .sobre-esquerda .foto {
+        display: flex;
+        align-items: center;
+    }
+
+    .sobre-mim .foto img {
+        width: 40vw;
+        transition: width 0.5s;
+    }
+
+    .sobre-mim .foto img:hover {
+        width: 40vw;
+    }
+
+    .sobre-mim .sobre-esquerda .info {
+        font-family: ClashDisplay;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        width: 40%;
+        line-height: 90%;
+        font-size: 2.5vw;
+        font-weight: 300;
+        letter-spacing: 0.5px;
+        gap: 8vw;
+    }
+
+    .sobre-mim .sobre-esquerda .info .design {
+        color: #fff;
+    }
+
+    .sobre-mim .design .quatroAnos {
+        background: linear-gradient(271deg, #BD00FF 23.52%, #0057FF 143.29%);
+        background-clip: text;
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        font-family: ClashDisplay;
+        font-style: normal;
+        font-size: 5vw;
+        font-weight: 600;
+    }
+
+    .sobre-mim .sobre-esquerda .info .programacao {
+        color: #fff;
+    }
+
+    .sobre-mim .programacao .doisAnos {
+        background: linear-gradient(271deg, #BD00FF 23.52%, #0057FF 143.29%);
+        background-clip: text;
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        font-family: ClashDisplay;
+        font-style: normal;
+        font-size: 5vw;
+
+        font-weight: 600;
+    }
+
+    .sobre-mim .sobre-divisao {
+        display: flex;
+        align-items: center;
+        width: 100%;
+    }
+
+    .sobre-mim .sobre-direita {
+        width: 100%;
+        display: flex;
+        text-align: center;
+        justify-content: center;
+        flex-direction: column;
+        color: #fff;
+        font-family: ClashDisplay;
+    }
+
+    .sobre-mim .sobre-direita .texto {
+
+        padding-bottom: 5vw;
+        margin: 10%;
+        display: flex;
+        flex-direction: column;
+        font-weight: 200;
+    }
+
+    .sobre-mim .sobre-direita .texto .texto-sobre {
+        margin: 1vw 0;
+        letter-spacing: .5px;
+        font-size: 3vw;
+    }
+
+    .sobre-mim .ola {
+        background: linear-gradient(270deg, #BD00FF 90%, #0057FF 110%);
+        background-clip: text;
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        font-family: ClashDisplay;
+        font-style: normal;
+        font-size: 8vw;
+        font-weight: 600;
+    }
+
+    .sobre-mim .sobre-div {
+        background: linear-gradient(100deg, #400057 0%, #0057FF 100%);
+        width: 80%;
+        height: 2px;
+        border-radius: 15px;
+        border: none;
+    }
+
+    /*---------------------------------sessão "o que eu faço?"-------------------------------*/
+
+    .oQueFaco {
+        background: radial-gradient(47.11% 47.09% at 38.05% 52.91%, rgba(189, 0, 255, 0.20) 0%, rgba(0, 0, 0, 0.00) 100%);
+        height: 100%;
+        letter-spacing: 0.5px;
+    }
+
+    .oQueFaco .frases .titulo {
+        font-size: 8vw;
+        margin: 15vw 0 5vw 0;
+    }
+
+    .oQueFaco .frases .texto {
+        display: flex;
+        flex-direction: column;
+        align-content: center;
+        text-align: center;
+        font-size: 10px;
+        width: 60vw;
+        font-weight: 500;
+        color: #fff;
+        gap: 1rem;
+    }
+
+    .oQueFaco .frases .texto span {
+        font-weight: 100;
+        color: #ffffff;
+    }
+
+    .oQueFaco .caixas {
+        border-radius: 20px;
+        display: flex;
+        align-items: center;
+        flex-direction: row;
+        gap: 5vw;
+        margin: 20vw 0;
+        overflow-x: scroll;
+        scroll-snap-type: mandatory;
+        width: 85%;
+        scroll-behavior: smooth;
+        scroll-padding: 0 50%;
+        transition: transform 0.3s;
+    }
+
+    .oQueFaco .caixas .caixa {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        border-radius: 20px;
+        background: rgba(217, 217, 217, 0.05);
+        width: 20vw;
+        height: 130vw;
+        flex: 0 0 auto;
+        min-width: 300px;
+        scroll-snap-align: start;
+        justify-content: center;
+        transition: width 0.3s, background 0.2s;
+    }
+
+    .oQueFaco .caixa:hover {
+        width: 80vw;
+    }
+
+    .oQueFaco .caixa:hover .botao button {
+        background: linear-gradient(262deg, #BD00FF 0%, #0057FF 100%);
+
+        color: #ffffff;
+        font-weight: 500;
+        cursor: pointer;
+    }
+
+
+    .oQueFaco .caixas hr {
+        display: none;
+    }
+
+    .oQueFaco .caixas .texto {
+        color: #fff;
+        display: flex;
+        flex-direction: column;
+        font-weight: 100;
+        color: #ffffff;
+        font-size: 12px;
+        text-align: left;
+        letter-spacing: 0.5px;
+        margin: 5px 0;
+        width: 50vw;
+        gap: 0.9rem;
+    }
+
+    .oQueFaco .caixas .texto .titulo {
+        font-weight: 500;
+        font-size: 5vw;
+        color: #fff;
+    }
+
+    .oQueFaco .caixas .texto .titulo-texto {
+        display: flex;
+    }
+
+    .oQueFaco .caixa .projeto {
+        display: none;
+        width: 10rem;
+        height: 0rem;
+        border-radius: 10px;
+        transition: width 0.5s, height 0.5s;
+        margin: 0 1rem;
+        border: none;
+    }
+
+    .oQueFaco .caixa:hover .projeto {
+        display: none;
+        align-items: center;
+        width: 15rem;
+        height: 20rem;
+    }
+
+    .oQueFaco .caixas .botao {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-right: 0;
+        width: 100%;
+    }
+
+    .oQueFaco .caixas .botao button {
+        margin: 5vw 0;
+        font-size: 15px;
+        padding: none;
+        font-weight: 500;
+        color: #fff;
+        font-family: ClashDisplay;
+        border: none;
+        border-radius: 15px;
+        background: linear-gradient(262deg, #BD00FF 0%, #0057FF 100%);
+        transition: padding 0.2s;
+    }
+
+    .oQueFaco .caixas .botao button:hover {
+        padding: none;
+    }
+
+    ::-webkit-scrollbar {
+        display: none;
+    }
+
+    /*---------------------------------sessão "habilidades"-------------------------------*/
+    .habilidades {
+        height: 220vw;
+        font-family: ClashDisplay;
+        background: none;
+    }
+
+    .habilidades .texto span {
+        background: linear-gradient(267deg, #c72eff 7.77%, #2d73ff 98.31%);
+        background-clip: text;
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        font-weight: 600;
+        font-size: 7vw;
+    }
+
+    .habilidades .texto p {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        color: #6A6A6A;
+        font-size: 10px;
+        font-weight: 300;
+        width: 70vw;
+        gap: 1rem;
+    }
+
+    .habilidades .texto {
+        margin: 5vw 0;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .habilidades .items {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin: 10vw 0;
+    }
+
+    .habilidades .part-item {
+        border-radius: 10px;
+        background: rgba(217, 217, 217, 0.15);
+        width: 70vw;
+        height: 15vw;
+        display: flex;
+        align-items: center;
+        font-size: 3vw;
+        letter-spacing: 0.7px;
+    }
+
+    .habilidades .part-item span {
+        font-weight: 500;
+    }
+
+    .habilidades .icon {
+        width: 7vw;
+        margin: 3vw;
+    }
+
+    .habilidades .items .part1 {
+        display: flex;
+        flex-direction: column;
+        gap: 4vw;
+        transition: gap 0.2s;
+    }
+
+    .habilidades .items .part1:hover {
+        gap: 4vw;
+    }
+
+    .habilidades .items .part2:hover {
+        gap: 4vw;
+    }
+
+    .habilidades .items .part2 {
+        display: flex;
+        flex-direction: column;
+        gap: 4vw;
+    }
+
+    .habilidades .voltar-inicio {
+        display: none;
+    }
+
+    /*---------------------------------sessão "conectar" -------------------------------*/
+    .conectar {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        height: 80vw;
+        font-family: ClashDisplay;
+        justify-content: center;
+        gap: 5vw;
+    }
+
+    .conectar .frase {
+        display: none;
+    }
+
+    .conectar .conectar-frase {
+        font-weight: 200;
+        letter-spacing: 0.2px;
+        display: flex;
+        flex-direction: column;
+        font-size: 10px;
+    }
+
+    .conectar .icones {
+        flex-direction: row;
+        align-items: center;
+        gap: 5vw;
+    }
+
+    .conectar .icones img {
+        width: 6vw;
+        cursor: pointer;
+        transition: transform 0.2s;
+    }
+
+    .conectar .icones img:hover {
+        transform: scale(1);
+    }
+
+    .conectar .forma {
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        gap: 5vw;
+        padding: 5vw;
+        align-items: center;
+        border-radius: 20px 20px 20px 3px;
+        background: linear-gradient(264deg, #BD00FF -2.38%, #0057FF 109.82%);
+    }
+
+    .conectar .forma .conectar-frase {
+        color: #fff;
+        line-height: 3vw;
+        align-items: center;
+    }
+
+    .conectar .forma .conectar-frase span {
+        font-size: 20px;
+        font-weight: 500;
+    }
+
+    .conectar button {
+        border-radius: 11px;
+        font-size: 15px;
+        font-weight: 600;
+        padding: 5vw;
+    }
+
+    .conectar .contate {
+        margin: 0 0 0 0;
+    }
+
+    .padding {
+        font-size: 8px;
+        height: 5vw;
+        letter-spacing: 0.5px;
+    }
 
 }
