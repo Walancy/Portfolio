@@ -1,4 +1,4 @@
-.padding {
+.footer {
     background: linear-gradient(265deg, #0057FF -12.39%, #BD00FF 103.02%);
     height: 3rem;
     color: #FFF;
@@ -11,11 +11,11 @@
     font-family: ClashDisplay;
   }
   
-  .padding span {
+  .footer span {
     font-weight: 500;
   }
   @media screen and (max-width: 550px){
-    .padding {
+    .footer {
       background: linear-gradient(265deg, #0057FF -12.39%, #BD00FF 103.02%);
       height: 3rem;
       color: #FFF;
@@ -28,7 +28,7 @@
       font-family: ClashDisplay;
     }
     
-    .padding span {
+    .footer span {
       font-weight: 500;
     }
   }

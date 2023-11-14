@@ -1,49 +1,79 @@
 @font-face {
     font-family: ClashDisplay;
-    src: url(../../../public/ClashDisplay-Variable.ttf);
+    src: url(../../../../public//ClashDisplay-Variable.ttf);
   }
 
-.sessao01{
+  @keyframes rotacionarGradiente {
+    0% {
+      background-position: 0% 0%;
+    }
+    100% {
+      background-position: 100% 100%;
+    }
+  }
+
+  .ux-container{
+    background: radial-gradient(50% 50% at 50% 50%, rgba(64, 0, 87, 0.42) 0%, rgba(19, 19, 21, 0.00) 100%);
+    animation: rotacionarGradiente 2s linear infinite alternate;
+    background-size: 200% 100%;
     display: flex;
     flex-direction: column;
     align-items: center;
-    color: #fff;
-    margin: 15% 0;
-    font-family: ClashDisplay;
-}
+    height: 90vh;
+    margin: 0;
+    padding: 0;
+  }
 
-.sessao01 .aviso{
+  .ux-container .frase{
     text-align: center;
-    font-size: 15px;
-    background: linear-gradient(91deg, rgba(217, 217, 217, 0.015) -5.03%, rgba(217, 217, 217, 0.00) -5.02%, rgba(217, 217, 217, 0.04) 27.86%, rgba(217, 217, 217, 0.03) 46.25%, rgba(217, 217, 217, 0.06) 89.31%, rgba(217, 217, 217, 0.00) 102%);
-    padding: 1vw 5vw;
-    border: 1px solid #303030;
-    border-radius: 50px;
-}
+    color: #616161;
+    width: 70vh;
+    margin: 5vh 0;
+  }
 
-.sessao01 .aviso span{
+  .ux-container .frase span{
     background: linear-gradient(271deg, #BD00FF 23.52%, #0057FF 143.29%);
     background-clip: text;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
-    font-weight: 600;
-    font-size: 80px;
-}
-
-.sessao01 button{
-    margin-top: 1vw;
-    font-size: 20px;
-    padding: 1vw 2vw;
-    font-weight: 500;
-    color: #fff;
     font-family: ClashDisplay;
-    border: none;
-    border-radius: 15px;
-    background: linear-gradient(262deg, #BD00FF 0%, #0057FF 100%);
-    transition: padding 0.2s;
-    cursor: pointer;    
-}
+    font-size: 40px;
+    font-weight: 600;
+  }
 
-.sessao01 button:hover{
-    padding: 1.2vw 2.2vw;
-}
+  .ux-container .itens{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    justify-content: center;
+    height: 50vh;
+  }
+
+  .ux-container .itens img{
+    width: 300px;
+    height: 180px;
+    border-radius: 10px;
+    margin: 0px;
+    transition: transform 0.2s, margin 0.2s;
+  }
+
+  .ux-container .itens img:hover{
+    transform: scale(0.95);
+    cursor: pointer;
+  }
+
+  .ux-container .itens img:active{
+    transform: scale(1);
+  }
+
+  .ux-container .itens .linha{
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+  }
+
+  .ux-container .footer{
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+  }

@@ -268,7 +268,7 @@ export const PaginaInicial = () => {
             <img src={UXart} alt="projeto" className="projeto" />
 
             <div className="botao">
-              <Link to="/desenvolvimento">
+              <Link to="/ux_ui">
                 <button>
                   <p>Ver projetos</p>
                 </button>

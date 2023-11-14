@@ -46,7 +46,7 @@
 .div-devFrontEnd{
   background: radial-gradient(50% 50% at 50% 50%, rgba(64, 0, 87, 0.42) 0%, rgba(19, 19, 21, 0.00) 100%);
   animation: rotacionarGradiente 2s linear infinite alternate;
-  background-size: 200% 100%; /* Adicionando esta linha */
+  background-size: 200% 100%;
 }
 
 .div-devFrontEnd .container {
@@ -220,4 +220,10 @@
   transform: scale(1.1);
   transition: 0.3s;
   margin: 0 0 30px 0;
+}
+
+.container .footer{
+  position: absolute;
+  bottom: 0;
+  width: 100%;
 }

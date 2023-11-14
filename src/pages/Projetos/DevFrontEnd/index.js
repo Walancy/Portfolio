@@ -109,8 +109,11 @@ export const DevFrontEnd = () => {
             </div>
           </div>
         </div>
+        <div className="footer">
+          <Footer />
+        </div>
       </section>
-      <Footer/>
+      
     </div>
   );
 };
