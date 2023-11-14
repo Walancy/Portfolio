@@ -1,40 +1,125 @@
 @font-face {
-    font-family: ClashDisplay;
-    src: url(../../../../public/ClashDisplay-Variable.ttf);
-  }
+  font-family: ClashDisplay;
+  src: url(../../../../public/ClashDisplay-Variable.ttf);
+}
 
-.container{
+.container-social-media .itens-stories {
+  display: none;
+}
+
+.container-social-media {
+  color: #fff;
   display: flex;
   align-items: center;
-  justify-content: center;
-}
-
-.container .itens{
-  display: flex;
   flex-direction: column;
-  margin: 5% 0;
+  margin: 0 0 5vh 0;
 }
 
-.container .itens .linha{
+.container-social-media .frase {
+  margin: 7vh 0;
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  font-size: 12px;
+  width: 70vh;
+  color: #797979;
+  letter-spacing: 0.2px;
+  line-height: 12px;
+}
+
+.container-social-media .frase span {
+  background: linear-gradient(271deg, #BD00FF 23.52%, #0057FF 143.29%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-size: 35px;
+  font-weight: 500;
+  line-height: 50px;
+}
+
+.container-social-media .botoes {
   display: flex;
   flex-direction: row;
-  align-items: center;
-  gap: 1vw;
-  align-content: center;
+  gap: 5px;
 }
 
-.container .itens hr{
-  width: 10vw;
-  height: 10vw;
-  border: 1px solid #7700ff;
-  transition: transform 0.3s;
-  border-radius: 10px;
+.container-social-media .botoes button {
+  border-radius: 9.635px;
+  display: flex;
+  border: 2px solid #3E3E3E;
+  background: rgba(255, 255, 255, 0.02);
+  padding: 10px 20px;
+  cursor: pointer;
+  transition: transform 0.2s, border 0.2s;
 }
 
-.container .itens hr:hover{
-  width: 10vw;
-  height: 10vw;
-  border: 1px solid #7700ff;
-  transform: scale(1.05);
-  transition: 0.3s;
+.container-social-media .botoes button:hover {
+  border: 2px solid #BD00FF
+}
+
+.container-social-media .divisao hr {
+  width: 150vh;
+  margin: 1.5vh 0 5vh 0;
+}
+
+.container-social-media .itens-feed {
+  display: flex;
+  flex-direction: column;
+  margin: none;
+}
+
+.container-social-media .itens-feed .linha {
+  display: flex;
+  flex-direction: row;
+  gap: 5px;
+}
+
+.container-social-media .itens-feed .linha .feed img {
+  width: 25vh;
+  height: 25vh;
+  margin: 0;
+}
+
+.feed-transition-enter {
+  opacity: 0;
+  transform: translateY(-20px);
+}
+
+.feed-transition-enter-active {
+  opacity: 1;
+  transform: translateY(0);
+  transition: opacity 500ms, transform 500ms;
+}
+
+.feed-transition-exit {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.feed-transition-exit-active {
+  opacity: 0;
+  transform: translateY(-20px);
+  transition: opacity 500ms, transform 500ms;
+}
+
+.stories-transition-enter {
+  opacity: 0;
+  transform: translateY(-20px);
+}
+
+.stories-transition-enter-active {
+  opacity: 1;
+  transform: translateY(0);
+  transition: opacity 500ms, transform 500ms;
+}
+
+.stories-transition-exit {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.stories-transition-exit-active {
+  opacity: 0;
+  transform: translateY(-20px);
+  transition: opacity 500ms, transform 500ms;
 }

@@ -320,7 +320,7 @@ export const PaginaInicial = () => {
             <img src={SocialMedia} alt="projeto" className="projeto" />
 
             <div className="botao">
-              <Link to="/desenvolvimento">
+              <Link to="/social-midia">
                 <button>
                   <p>Ver projetos</p>
                 </button>
