@@ -45,6 +45,7 @@
 
 .container-social-media .botoes button {
   border-radius: 9.635px;
+  color: #fff;
   display: flex;
   border: 2px solid #3E3E3E;
   background: rgba(255, 255, 255, 0.02);

@@ -14,7 +14,7 @@ export const Header = () => {
             .getElementById("sobreMim")
             .scrollIntoView({ behavior: "smooth" });
         });
-  
+
       return () => {
         document
           .getElementById("botaoSobreMim")
@@ -26,7 +26,7 @@ export const Header = () => {
       };
     }
   }, []);
-  
+
   useEffect(() => {
     if (window.location.pathname === "/") {
       document
@@ -36,7 +36,7 @@ export const Header = () => {
             .getElementById("oQueFaco")
             .scrollIntoView({ behavior: "smooth" });
         });
-  
+
       return () => {
         document
           .getElementById("botaoProjetos")
@@ -48,7 +48,6 @@ export const Header = () => {
       };
     }
   }, []);
-  
 
   useEffect(() => {
     document.getElementById("logoSant").addEventListener("click", function () {
@@ -65,6 +64,25 @@ export const Header = () => {
             .getElementById("inicioHeader")
             .scrollIntoView({ behavior: "smooth" });
         });
+    };
+  }, []);
+
+  useEffect(() => {
+    const voltarInicioButton = document.getElementById("inicio-header");
+    const inicioHeaderElement = document.getElementById("inicioHeader");
+
+    const scrollFunction = () => {
+      inicioHeaderElement.scrollIntoView({ behavior: "smooth" });
+    };
+
+    if (voltarInicioButton && inicioHeaderElement) {
+      voltarInicioButton.addEventListener("click", scrollFunction);
+    }
+
+    return () => {
+      if (voltarInicioButton && inicioHeaderElement) {
+        voltarInicioButton.removeEventListener("click", scrollFunction);
+      }
     };
   }, []);
 
@@ -87,6 +105,13 @@ export const Header = () => {
         </div>
         <div className="meio">
           <div className="botoes">
+            <div className="inicio-header">
+              <Link to={"/"}>
+                <button id="inicio-header" className="botao-inicio">
+                  inicio
+                </button>
+              </Link>
+            </div>
             <div className="sobre">
               <Link to={"/"}>
                 <button id="botaoSobreMim" className="botao-sobre">
