@@ -29,6 +29,9 @@ import { Header } from "../../components/Header/header";
 import { Footer } from "../../components/Footer";
 import { Navbar } from "../../components/Navbar";
 
+import CurriculoDesenvolvedorPDF from "../../assets/curriculos/Curriculo Deselvolvedor Walancy.pdf";
+import CurriculoDesignerPDF from "../../assets/curriculos/Curriculo Desginer Walancy.pdf";
+
 export const PaginaInicial = () => {
   const IconeLink = ({ src, alt, link }) => (
     <a href={link} target="_blank" rel="noopener noreferrer">
@@ -36,6 +39,14 @@ export const PaginaInicial = () => {
     </a>
   );
 
+  const downloadPdf = (url, fileName) => {
+    const aTag = document.createElement('a');
+    aTag.href = url;
+    aTag.setAttribute('download', fileName);
+    document.body.appendChild(aTag);
+    aTag.click();
+    document.body.removeChild(aTag);
+  }
 
   useEffect(() => {
     const voltarInicioButton = document.getElementById("voltar-inicio");
@@ -199,7 +210,12 @@ export const PaginaInicial = () => {
               com clientes e colaboradores, buscando sempre inovação e
               excelência em cada criação.
             </p>
+            <div className="download-cv">
+              <button onClick={() => downloadPdf(CurriculoDesenvolvedorPDF, "Curriculo_Desenvolvedor_Walancy.pdf")}>CV - Desenvolvedor</button>
+              <button onClick={() => downloadPdf(CurriculoDesignerPDF, "Curriculo_Designer_Walancy.pdf")}>CV - Designer</button>
+            </div>
           </div>
+
         </div>
       </section>
       <section className="oQueFaco" id="oQueFaco">
@@ -294,7 +310,7 @@ export const PaginaInicial = () => {
             <img src={Logofolio} alt="projeto" className="projeto" />
 
             <div className="botao">
-              <Link to="/desenvolvimento">
+              <Link to="/logo-idv">
                 <button>
                   <p>Ver projetos</p>
                 </button>
@@ -327,7 +343,8 @@ export const PaginaInicial = () => {
               </Link>
             </div>
           </div>
-          <div className="caixa" id="MotionDesign">
+          <div className="caixa" id="MotionDesign" style={{ display: 'none' }}>
+
             <hr className="forma"></hr>
             <div className="texto">
               <span className="titulo">

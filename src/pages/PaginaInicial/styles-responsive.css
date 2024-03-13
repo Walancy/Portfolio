@@ -279,6 +279,11 @@
         border: none;
     }
 
+    .sobre-mim .sobre-direita .texto .download-cv {
+        margin: 1rem;
+        align-items: center;
+    }
+
     /*---------------------------------sessão "o que eu faço?"-------------------------------*/
 
     .oQueFaco {

@@ -1,0 +1,16 @@
+@media screen and (max-width: 550px) {
+    .container .itens .item img {
+        width: 30vw;
+        height: 30vw;
+    }
+
+
+    .container .itens {
+        margin: none;
+        margin-top: 0;
+    }
+
+    .container .itens .linha {
+        gap: 1vw;
+    }
+}

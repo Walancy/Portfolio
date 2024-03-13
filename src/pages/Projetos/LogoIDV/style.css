@@ -1,40 +1,30 @@
 @font-face {
-    font-family: ClashDisplay;
-    src: url(../../../../public/ClashDisplay-Variable.ttf);
-  }
+  font-family: ClashDisplay;
+  src: url(../../../../public/ClashDisplay-Variable.ttf);
+}
 
-.container{
+.container {
   display: flex;
   align-items: center;
   justify-content: center;
 }
 
-.container .itens{
+.container .itens {
   display: flex;
   flex-direction: column;
   margin: 5% 0;
 }
 
-.container .itens .linha{
+.container .itens .linha {
   display: flex;
   flex-direction: row;
   align-items: center;
-  gap: 1vw;
+  gap: 0.3vw;
   align-content: center;
 }
 
-.container .itens hr{
-  width: 10vw;
-  height: 10vw;
-  border: 1px solid #7700ff;
-  transition: transform 0.3s;
-  border-radius: 10px;
-}
-
-.container .itens hr:hover{
-  width: 10vw;
-  height: 10vw;
-  border: 1px solid #7700ff;
-  transform: scale(1.05);
-  transition: 0.3s;
+.container .itens .item img {
+  width: 100%;
+  height: 100%;
+  border-color: #000000;
 }
