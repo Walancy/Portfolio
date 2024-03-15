@@ -90,9 +90,9 @@ export const PaginaInicial = () => {
     <div>
       <section id="inicioHeader" className="header">
         <Header />
-        <Navbar />
       </section>
       <section id="PageInicio" className="inicio">
+        <Navbar />
         <div className="inicio-box">
           <div className="imagem">
             <img src={Perfil} alt="Perfil" className="foto" />
