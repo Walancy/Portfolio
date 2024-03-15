@@ -1,0 +1,53 @@
+@media screen and (max-width: 550px) {
+    .ux-container .itens .linha {
+        height: auto;
+        flex-direction: column;
+        margin-bottom: 30vw;
+    }
+
+    .header {
+        display: none;
+    }
+
+    .ux-container .itens .linha img {
+        width: 80vw;
+    }
+
+    .ux-container .footer {
+        display: none;
+    }
+
+    .ux-container .itens {
+        height: auto;
+    }
+
+    .ux-container .frase {
+        width: 80vw;
+    }
+
+    .ux-container .frase p {
+        font-size: 13px;
+    }
+
+    .ux-container .frase span {
+        font-size: 35px;
+    }
+
+
+    .ux-container .itens img {
+        transition: transform none, margin none;
+    }
+
+    .ux-container .itens img:hover {
+        transform: scale(none);
+        cursor: none;
+    }
+
+    .ux-container .itens img:active {
+        transform: scale(none);
+    }
+
+    .ux-container .navegacao {
+        min-height: 0px;
+    }
+}

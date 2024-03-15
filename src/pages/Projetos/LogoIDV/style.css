@@ -12,14 +12,13 @@
 .container .itens {
   display: flex;
   flex-direction: column;
-  margin: 5% 0;
+  margin: 10vw 0;
 }
 
 .container .itens .linha {
   display: flex;
   flex-direction: row;
   align-items: center;
-  gap: 0.3vw;
   align-content: center;
 }
 

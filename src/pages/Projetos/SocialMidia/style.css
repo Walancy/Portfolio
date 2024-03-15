@@ -69,13 +69,19 @@
   margin: none;
 }
 
-.container-social-media .itens-feed .linha {
-  display: flex;
-  flex-direction: row;
-  gap: 5px;
+.container-social-media .itens-feed .grid-feed {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 0.5vw;
 }
 
-.container-social-media .itens-feed .linha .feed img {
+.container-social-media .grid-stories {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 0.5vw;
+}
+
+.container-social-media .grid-feed .stories img {
   width: 25vh;
   height: 25vh;
   margin: 0;

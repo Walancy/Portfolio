@@ -1,5 +1,6 @@
 import { Header } from "../../../components/Header/header";
 import { Footer } from "../../../components/Footer/index";
+import { Navbar } from "../../../components/Navbar";
 import "./style.css";
 import "./styles-responsive.css";
 
@@ -17,6 +18,7 @@ export const DevFrontEnd = () => {
         <Header />
       </section>
       <section className="frase">
+        <Navbar />
         <p className="titulo">Dev. Front-End</p>
         <p className="sub-titulo">
           Abaixo estão alguns dos meus trabalhos como front-end, cada imagem é
@@ -113,7 +115,7 @@ export const DevFrontEnd = () => {
           <Footer />
         </div>
       </section>
-      
+
     </div>
   );
 };

@@ -59,14 +59,13 @@
         background-color: #ffffff;
         border: none;
         border-radius: 20px;
-        margin-top: 0;
+        margin-top: 2vw;
         margin-bottom: 5vw;
-        transition: width 0.3s, margin-top 0.3s;
+        transition: width 0.5s, margin-top 0.3s;
     }
 
     .inicio .frase:hover .separador {
-        margin-top: -3vw;
-        width: 70vw;
+        width: 60vw;
     }
 
 
@@ -337,8 +336,8 @@
         background: rgba(217, 217, 217, 0.05);
         width: 20vw;
         height: 130vw;
-        flex: 0 0 auto;
-        min-width: 300px;
+
+        min-width: 280px;
         scroll-snap-align: start;
         justify-content: center;
         transition: width 0.3s, background 0.2s;
@@ -371,7 +370,7 @@
         text-align: left;
         letter-spacing: 0.5px;
         margin: 5px 0;
-        width: 50vw;
+        width: 53vw;
         gap: 0.9rem;
     }
 

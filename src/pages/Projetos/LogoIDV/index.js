@@ -1,5 +1,6 @@
 import { Header } from "../../../components/Header/header";
 import { Footer } from "../../../components/Footer/index";
+import { Navbar } from "../../../components/Navbar";
 import "./styles-responsive.css";
 import "./style.css";
 
@@ -32,6 +33,7 @@ export const LogoIDV = () => {
       <section id="inicioHeader" className="header">
         <Header />
       </section>
+      <Navbar />
       <section className="container">
         <div className="itens">
           <div className="linha" id="linha1">

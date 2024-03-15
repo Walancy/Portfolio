@@ -6,11 +6,25 @@
 
 
     .container .itens {
-        margin: none;
-        margin-top: 0;
+        margin: 0vw !important;
+        margin-top: 2vw !important;
+        margin-bottom: 30vw !important;
     }
 
     .container .itens .linha {
-        gap: 1vw;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        margin: 1vw 3vw;
+        gap: 0vw;
+        align-content: center;
+    }
+
+    .footer {
+        display: none;
+    }
+
+    .navegacao {
+        min-height: 0px;
     }
 }
