@@ -68,7 +68,7 @@
 
   .ux-container .itens .linha{
     display: flex;
-    flex-direction: row;
+    flex-direction:row;
     gap: 10px;
   }
 

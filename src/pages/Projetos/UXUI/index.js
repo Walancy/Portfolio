@@ -9,6 +9,7 @@ import imagem01 from "../../../assets/uxui/Rectangle 102.svg";
 import imagem02 from "../../../assets/uxui/Rectangle 103.svg";
 import imagem03 from "../../../assets/uxui/Rectangle 104.svg";
 import imagem04 from "../../../assets/uxui/Rectangle 105.svg";
+import imagem05 from "../../../assets/uxui/Rectangle 106.svg";
 
 export const UxUi = () => {
   return (
@@ -33,6 +34,7 @@ export const UxUi = () => {
             <a href="https://www.figma.com/proto/DVw4WivuY6aNoSUqLi9GnG/Untitled?type=design&node-id=212-2&t=oaExhMm47Robtduk-0&scaling=min-zoom&page-id=0%3A1&starting-point-node-id=234%3A51&prev-org-id=external-teams"><img src={imagem02} alt="Descrição da Imagem 02" /></a>
             <a href="https://www.figma.com/proto/zHD582HDU23kDABavJpGLz/Untitled?type=design&node-id=194-255&t=oaExhMm47Robtduk-0&scaling=min-zoom&page-id=0%3A1&starting-point-node-id=194%3A255"><img src={imagem03} alt="Descrição da Imagem 03" /></a>
             <a href="https://www.figma.com/proto/RkN2kxEYNH2fuNKDXvj3rg/Genius?type=design&node-id=96-2&t=oaExhMm47Robtduk-0&scaling=min-zoom&page-id=93%3A2&starting-point-node-id=93%3A3"><img src={imagem04} alt="Descrição da Imagem 04" /></a>
+            <a href="https://www.figma.com/proto/nKP0B6Hgc4aKccjigjWzKp/Untitled?type=design&t=VRTZnI2SKXPeaQk7-0&scaling=scale-down-width&page-id=0%3A1&node-id=5-2&starting-point-node-id=5%3A2&hotspot-hints=0"><img src={imagem05} alt="Descrição da Imagem 04" /></a>
           </div>
         </div>
         <div className="footer">
