@@ -5,6 +5,12 @@
         margin-bottom: 30vw;
     }
 
+    .ux-container .itens .linha{
+        display: grid;
+        grid-template-columns: repeat(1, 5fr);
+        gap: 10px;
+      }
+
     .header {
         display: none;
     }

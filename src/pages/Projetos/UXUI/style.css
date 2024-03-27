@@ -50,8 +50,8 @@
   }
 
   .ux-container .itens img{
-    width: 300px;
-    height: 180px;
+    width: 17vw;
+    height: auto;
     border-radius: 10px;
     margin: 0px;
     transition: transform 0.2s, margin 0.2s;
@@ -67,8 +67,8 @@
   }
 
   .ux-container .itens .linha{
-    display: flex;
-    flex-direction:row;
+    display: grid;
+    grid-template-columns: repeat(5, 5fr);
     gap: 10px;
   }
 
